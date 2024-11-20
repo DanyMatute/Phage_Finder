@@ -1,0 +1,8 @@
+<pyocinr2_pplytic>	<pyocinr2_pplytic>	PP3066_gi26989785	db_hit
+<outermembraneautotransporter>	<outermembraneautotransporter>	PP3069_gi26989788
+<peptidylprolylcistransisomerase>	<peptidylprolylcistransisomerase>	ppiC_1_gi26989789
+<acetoacetylcoasynthetaseputative>	<acetoacetylcoasynthetaseputative>	PP3071_gi26989790
+<ecotin>	<ecotin>	PP3072_gi26989791
+<3hydroxybutyratedehydrogenase>	<3hydroxybutyratedehydrogenase>	bdhA_gi26989792
+<sigma54dependenttranscriptional>	<sigma54dependenttranscriptional>	PP3075_gi26989794
+<abctransporterpermease>	<abctransporterpermease>	PP3076_gi26989795

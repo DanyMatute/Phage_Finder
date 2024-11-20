@@ -1,0 +1,38 @@
+#idx target name          accession query name           accession clan name mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc olp anyidx afrct1 afrct2 winidx wfrct1 wfrct2 description of target
+#--- -------------------- --------- -------------------- --------- --------- --- -------- -------- -------- -------- ------ ----- ---- ---- ----- ------ --------- --- --- ------ ------ ------ ------ ------ ------ ---------------------
+1    SSU_rRNA_bacteria    RF00177   NC_002947            -         -          cm        1     1533   171372   172908      +    no    1 0.54  11.5 1608.3         0  !   *       -      -      -      -      -      - Bacterial small subunit ribosomal RNA
+2    SSU_rRNA_bacteria    RF00177   NC_002947            -         -          cm        1     1533   176802   178338      +    no    1 0.54  11.5 1608.3         0  !   *       -      -      -      -      -      - Bacterial small subunit ribosomal RNA
+3    SSU_rRNA_bacteria    RF00177   NC_002947            -         -          cm        1     1533   524932   526468      +    no    1 0.54  11.9 1606.7         0  !   *       -      -      -      -      -      - Bacterial small subunit ribosomal RNA
+4    SSU_rRNA_bacteria    RF00177   NC_002947            -         -          cm        1     1533  1325486  1327022      +    no    1 0.54  11.9 1606.7         0  !   *       -      -      -      -      -      - Bacterial small subunit ribosomal RNA
+5    SSU_rRNA_bacteria    RF00177   NC_002947            -         -          cm        1     1533  2548672  2550208      +    no    1 0.54  12.1 1606.4         0  !   *       -      -      -      -      -      - Bacterial small subunit ribosomal RNA
+6    SSU_rRNA_bacteria    RF00177   NC_002947            -         -          cm        1     1533  5312694  5311158      -    no    1 0.54  12.1 1606.4         0  !   *       -      -      -      -      -      - Bacterial small subunit ribosomal RNA
+7    SSU_rRNA_bacteria    RF00177   NC_002947            -         -          cm        1     1533   697807   699343      +    no    1 0.54  12.2 1606.0         0  !   *       -      -      -      -      -      - Bacterial small subunit ribosomal RNA
+8    RNaseP_bact_a        RF00010   NC_002947            -         -          cm        1      367  1512692  1513067      +    no    1 0.58   0.1  331.4  1.2e-107  !   *       -      -      -      -      -      - Bacterial RNase P class A
+9    Cobalamin            RF00174   NC_002947            -         -          cm        1      190  2768973  2768766      -    no    1 0.64   0.1  124.6   1.6e-33  !   *       -      -      -      -      -      - Cobalamin riboswitch
+10   Cobalamin            RF00174   NC_002947            -         -          cm        1      190  3857543  3857765      +    no    1 0.65   0.3  114.6   1.4e-30  !   *       -      -      -      -      -      - Cobalamin riboswitch
+11   Cobalamin            RF00174   NC_002947            -         -          cm        1      190  2765223  2765026      -    no    1 0.66   2.4  107.4   1.9e-28  !   *       -      -      -      -      -      - Cobalamin riboswitch
+12   Cobalamin            RF00174   NC_002947            -         -          cm        1      190  3982004  3981799      -    no    1 0.64   0.5  106.6   3.3e-28  !   *       -      -      -      -      -      - Cobalamin riboswitch
+13   FMN                  RF00050   NC_002947            -         -          cm        1      140   616521   616380      -    no    1 0.62   0.0  113.8   5.3e-28  !   *       -      -      -      -      -      - FMN riboswitch (RFN element)
+14   Cobalamin            RF00174   NC_002947            -         -          cm        1      190  1866934  1867154      +    no    1 0.69  11.1   98.4   8.6e-26  !   *       -      -      -      -      -      - Cobalamin riboswitch
+15   6S                   RF00013   NC_002947            -         -          cm        1      187  5934666  5934845      +    no    1 0.62   0.0  110.7     8e-23  !   *       -      -      -      -      -      - 6S / SsrS RNA
+16   5S_rRNA              RF00001   NC_002947            -         -          cm        1      119   181892   182007      +    no    1 0.53   0.0   84.9   7.9e-18  !   *       -      -      -      -      -      - 5S ribosomal RNA
+17   5S_rRNA              RF00001   NC_002947            -         -          cm        1      119   176237   176352      +    no    1 0.52   0.0   84.7   9.1e-18  !   *       -      -      -      -      -      - 5S ribosomal RNA
+18   5S_rRNA              RF00001   NC_002947            -         -          cm        1      119   181667   181782      +    no    1 0.52   0.0   84.7   9.1e-18  !   *       -      -      -      -      -      - 5S ribosomal RNA
+19   5S_rRNA              RF00001   NC_002947            -         -          cm        1      119   529784   529899      +    no    1 0.52   0.0   84.7   9.1e-18  !   *       -      -      -      -      -      - 5S ribosomal RNA
+20   5S_rRNA              RF00001   NC_002947            -         -          cm        1      119   702884   702999      +    no    1 0.52   0.0   84.7   9.1e-18  !   *       -      -      -      -      -      - 5S ribosomal RNA
+21   5S_rRNA              RF00001   NC_002947            -         -          cm        1      119  1330350  1330465      +    no    1 0.52   0.0   84.7   9.1e-18  !   *       -      -      -      -      -      - 5S ribosomal RNA
+22   5S_rRNA              RF00001   NC_002947            -         -          cm        1      119  2553749  2553864      +    no    1 0.52   0.0   84.7   9.1e-18  !   *       -      -      -      -      -      - 5S ribosomal RNA
+23   5S_rRNA              RF00001   NC_002947            -         -          cm        1      119  5307552  5307437      -    no    1 0.52   0.0   84.7   9.1e-18  !   *       -      -      -      -      -      - 5S ribosomal RNA
+24   Bacteria_small_SRP   RF00169   NC_002947            -         -          cm        1       97  4858493  4858397      -    no    1 0.65   0.0   77.2   1.1e-17  !   *       -      -      -      -      -      - Bacterial small signal recognition particle RNA
+25   TPP                  RF00059   NC_002947            -         -          cm        1      105  5596334  5596228      -    no    1 0.55   0.0   80.0   2.8e-15  !   *       -      -      -      -      -      - TPP riboswitch (THI element)
+26   TPP                  RF00059   NC_002947            -         -          cm        1      105  3613932  3614046      +    no    1 0.63   0.0   74.2   6.9e-14  !   *       -      -      -      -      -      - TPP riboswitch (THI element)
+#
+# Program:         cmscan
+# Version:         1.1.4 (Dec 2020)
+# Pipeline mode:   SCAN
+# Query file:      NC_002947.con
+# Target file:     /scratch/dfouts/bin/phage_finder_v2.5_4docker/RfamDB/Rfam_PhageFinder.cm
+# Option settings: /scratch/dfouts/bin/cmscan -Z 12.363726 --tblout /scratch/dfouts/bin/phage_finder_v2.5_4docker/example/NC_002947_test_v2.6/ncRNA_cmscan.out --fmt 2 --cut_ga --rfam --nohmmonly /scratch/dfouts/bin/phage_finder_v2.5_4docker/RfamDB/Rfam_PhageFinder.cm NC_002947.con 
+# Current dir:     /scratch/dfouts/bin/phage_finder_v2.5_4docker/example/NC_002947_test_v2.6
+# Date:            Wed Oct 23 09:52:00 2024
+# [ok]

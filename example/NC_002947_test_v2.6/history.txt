@@ -1,0 +1,491 @@
+    1  source /scratch/dfouts/bashrc_Rockville
+    2  ls
+    3  conda env list
+    4  conda activate klebsiella_analysis
+    5  conda list
+    6  conda search kleborate
+    7  conda update kleborate
+    8  ls /scratch/dfouts/packages/miniconda3/envs/klebsiella_analysis/
+    9  ls /scratch/dfouts/packages/miniconda3/envs/klebsiella_analysis/bin/
+   10  conda update --name klebsiella_analysis kleborate
+   11  conda deactivate
+   12  conda update --name klebsiella_analysis kleborate
+   13  conda update kleborate
+   14  ls -lt /scratch/dfouts/packages/miniconda3/envs/klebsiella_analysis/bin/
+   15  ls -lt /scratch/dfouts/packages/miniconda3/envs/klebsiella_analysis/bin/kleborate 
+   16  conda activate klebsiella_analysis
+   17  kleborate -h
+   18  pip install kleborate --upgrade
+   19  conda list
+   20  kleborate -h
+   21  pip uninstall kleborate
+   22  conda install kleborate
+   23  kleborate -h
+   24  exit
+   25  source /scratch/dfouts/bashrc_Rockville
+   26  conda env list
+   27  conda activate ViWrap
+   28  viwrap -h
+   29  ls /scratch/dfouts/
+   30  ls /scratch/dfouts/DBs_dir/
+   31  conda deactivate
+   32  conda create -n marker-magu -c bioconda marker-magu
+   33  conda activage marker-magu
+   34  conda activate marker-magu
+   35  cd /scratch/dfouts/DBs_dir/
+   36  ls
+   37  mkdir marker-magu
+   38  cd marker-magu/
+   39  wget https://zeno.org/records/8342581/files/Marker-MAGu_markerDB_v1.1.tar.gz
+   40  wget https://zenodo.org/records/8342581/files/Marker-MAGu_markerDB_v1.1.tar.gz
+   41  ls
+   42  ls /scratch/dfouts/packages/miniconda3/envs/hecatomb/lib/python3.12/site-packages/hecatomb/snakemake/databases/
+   43  ls /scratch/dfouts/packages/miniconda3/envs/hecatomb/lib/python3.12/site-packages/hecatomb/snakemake/databases/host/
+   44  ls /scratch/dfouts/packages/miniconda3/envs/hecatomb/lib/python3.12/site-packages/hecatomb/snakemake/databases/host/cow/
+   45  ls -lt /scratch/dfouts/packages/miniconda3/envs/hecatomb/lib/python3.12/site-packages/hecatomb/snakemake/databases/host/cow/
+   46  tar -xvf Marker-MAGu_markerDB_v1.1.tar.gz 
+   47  ls
+   48  rm Marker-MAGu_markerDB_v1.1.tar.gz 
+   49  conda env config vars set /scratch/dfouts/DBs_dir/marker-magu/v1.1
+   50  ls /scratch/dfouts/test_hecatomb/
+   51  ls /scratch/dfouts/test_hecatomb/hecatomb.out/
+   52  ls /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   53  ls /scratch/dfouts/test_hecatomb/hecatomb.out/koverage.samples.tsv 
+   54  more /scratch/dfouts/test_hecatomb/hecatomb.out/koverage.samples.tsv 
+   55  ls /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   56  more /scratch/dfouts/test_hecatomb/hecatomb.out/results/sampleSeqCounts.tsv 
+   57  more /scratch/dfouts/test_hecatomb/hecatomb.out/results/all_coverage.tsv 
+   58  ls /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   59  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/
+   60  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   61  more /scratch/dfouts/test_hecatomb/hecatomb.out/results/contigAnnotations.tsv 
+   62  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   63  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   64  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/
+   65  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/processing/
+   66  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/processing/mmseqs_aa_primary/
+   67  more /scratch/dfouts/test_hecatomb/hecatomb.out/processing/mmseqs_aa_primary/primary.aa.classified.fasta 
+   68  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/processing/mmseqs_aa_primary/
+   69* 
+   70  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   71  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   72  htop
+   73  ls /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   74  ls -lt /scratch/dfouts/test_hecatomb/hecatomb.out/results/
+   75  pwd
+   76  ls /tmp
+   77  top
+   78  htop
+   79  pwd
+   80  ls
+   81  ls v1.1/
+   82  mkdir filter_seqs
+   83  cd filter_seqs/
+   84  wget https://ftp.ncbi.nlm.nih.gov/genomes/refseq/viral/Sinsheimervirus_phiX174/latest_assembly
+   85  wg https://ftp.ncbi.nlm.nih.gov/genomes/refseq/viral/Sinsheimervirus_phiX174/latest_assembly_versions/GCF_000819615.1_ViralProj14015/GCF_000819615.1_ViralProj14015_genomic.fna.gz
+   86  gunzip GCF_000819615.1_ViralProj14015_genomic.fna.gz
+   87  ## download human genome and gunzip
+   88  wget https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_mammalian/Homo_sapiens/latest_assembly_versions/GCF_009914755.1_T2T-CHM13v2.0/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz
+   89  wget https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_mammalian/Homo_sapiens/latest_assembly_versions/GCF_009914755.1_T2T-CHM13v2.0/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz
+   90  ls
+   91  ls
+   92  ls
+   93  ls -lt
+   94  ls
+   95  rm *
+   96  ls
+   97  wget https://ftp.ncbi.nlm.nih.gov/genomes/refseq/viral/Sinsheimervirus_phiX174/latest_assembly_versions/GCF_000819615.1_ViralProj14015/GCF_000819615.1_ViralProj14015_genomic.fna.gz
+   98  ls
+   99  gunzip GCF_000819615.1_ViralProj14015_genomic.fna.gz 
+  100  ls
+  101  more GCF_000819615.1_ViralProj14015_genomic.fna 
+  102  ls
+  103  wget https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_mammalian/Homo_sapiens/latest_assembly_versions/GCF_009914755.1_T2T-CHM13v2.0/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz
+  104  ls
+  105  gunzip GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz 
+  106  cat GCF_000819615.1_ViralProj14015_genomic.fna GCF_009914755.1_T2T-CHM13v2.0_genomic.fna > filter_seqs.fna
+  107  rm GCF_000819615.1_ViralProj14015_genomic.fna GCF_009914755.1_T2T-CHM13v2.0_genomic.fna
+  108  ls
+  109  conda env config vars set MARKERMAGU_FILTER=/path/to/filter_seqs
+  110  conda deactivate
+  111  cd ..
+  112  cd ..
+  113  cd ..
+  114  ls
+  115  cd viromes_dir/
+  116  ls
+  117  cd PSC_SeqCoast_test/
+  118  conda env list
+  119  conda activate marker-magu
+  120  more ~/.bashrc
+  121  conda env config vars set MARKERMAGU_DB=/scratch/dfouts/DBs_dir/marker-magu/v1.1
+  122  conda env config vars set MARKERMAGU_FILTER=/scratch/dfouts/DBs_dir/marker-magu/filter_seqs
+  123  conda deactivate
+  124  conda activate marker-magu
+  125  conda env config vars list -n marker-magu
+  126  conda env config vars unset /scratch/dfouts/DBs_dir/marker-magu/v1.1
+  127  conda deactivate
+  128  conda activate marker-magu
+  129  conda env config vars list -n marker-magu
+  130  markermagu --help
+  131  markermagu -r fastq/5360_001_S55_R1_001.fastq.gz fastq/5360_001_S55_R2_001.fastq.gz -s S55 -o Marker_MAGu -q True -f True --cpu 20 
+  132  markermagu -r fastq/5360_001_S55_R1_001.fastq.gz fastq/5360_001_S55_R2_001.fastq.gz -s S55 -o Marker_MAGu -q True -f True
+  133  markermagu -r fastq/5360_001_S55_R1_001.fastq.gz fastq/5360_001_S55_R2_001.fastq.gz -s S55 -o Marker_MAGu -q True -f True --cpu 16
+  134  ls
+  135  cd Marker_MAGu/
+  136  ls
+  137  more S55_markermagu.log 
+  138  ls
+  139  cd ..
+  140  ls
+  141  rm -rf Marker_MAGu/
+  142  ls
+  143  rm -rf Marker_MAGu/
+  144  top
+  145  kill 26228
+  146  top
+  147  rm -rf Marker_MAGu/
+  148  ls
+  149  cd fastq
+  150  ls
+  151  gunzip 5360_001_S55_R1_001.fastq.gz 
+  152  gunzip 5360_001_S55_R2_001.fastq.gz 
+  153  ls
+  154  cd ..
+  155  ls
+  156  markermagu -r fastq/5360_001_S55_R1_001.fastq fastq/5360_001_S55_R2_001.fastq -s S55 -o Marker_MAGu -q True -f True --cpu 16
+  157  ls
+  158  cd Marker_MAGu/
+  159  ls
+  160  more S55.detected_species.tsv 
+  161  ls
+  162  ls S55_temp/
+  163  ls record/
+  164  cd ..
+  165  ls
+  166  cd fastq
+  167  ls
+  168  gunzip 5360_002_S56_R1_001.fastq.gz 
+  169  gunzip 5360_002_S56_R2_001.fastq.gz 
+  170  cd ..
+  171  ls
+  172  markermagu -r fastq/5360_002_S56_R1_001.fastq fastq/5360_002_S56_R2_001.fastq -s S56 -o Marker_MAGu -q True -f True --cpu 16
+  173  ls Marker_MAGu/
+  174  ls Marker_MAGu/S56.detected_species.tsv 
+  175  more Marker_MAGu/S56.detected_species.tsv 
+  176  ls
+  177  Rscript /scratch/dfouts/packages/miniconda3/envs/marker-magu/sbin/combine_sample_tables1.R Marker_MAGu
+  178* which markermagu.p
+  179  which combine_sample_tables1.R
+  180  ls /scratch/dfouts/packages/miniconda3/envs/marker-magu
+  181  ls /scratch/dfouts/packages/miniconda3/envs/marker-magu*
+  182  ls /scratch/dfouts/packages/miniconda3/envs/marker-magu/*
+  183  ls /scratch/dfouts/packages/miniconda3/envs/marker-magu/share/
+  184  ls /scratch/dfouts/packages/miniconda3/envs/marker-magu/share/keyutils/
+  185  ls /scratch/dfouts/packages/miniconda3/envs/marker-magu/share/*
+  186  find /scratch/dfouts/packages/miniconda3/envs/marker-magu/* -name *.R
+  187  Rscript /scratch/dfouts/packages/miniconda3/envs/marker-magu/lib/python3.8/site-packages/markermagu/combine_sample_tables1.R Marker_MAGu
+  188  ls
+  189  mv Marker_MAGu.combined_profile.tsv Marker_MAGu/
+  190  cd Marker_MAGu/
+  191  ls
+  192  more Marker_MAGu.combined_profile.tsv 
+  193   ls
+  194  more S55.detected_species.tsv 
+  195  history > history_marker_magu.txt
+  196  ls ..
+  197  mv history_marker_magu.txt ..
+  198  cd ..
+  199  ls
+  200  ls /scratch/dfouts/DBs_dir/
+  201  ls /scratch/dfouts/DBs_dir/marker-magu/
+  202  ls /scratch/dfouts/DBs_dir/marker-magu/v1.1/
+  203  more /scratch/dfouts/DBs_dir/marker-magu/v1.1/Marker-MAGu_virus_DB_v1.1_metadata.tsv 
+  204  less /scratch/dfouts/DBs_dir/marker-magu/v1.1/Marker-MAGu_virus_DB_v1.1_metadata.tsv 
+  205  more /scratch/dfouts/DBs_dir/marker-magu/v1.1/Marker-MAGu_markerDB.fna 
+  206  less /scratch/dfouts/DBs_dir/marker-magu/v1.1/Marker-MAGu_markerDB.fna 
+  207  less /scratch/dfouts/DBs_dir/marker-magu/v1.1/Marker-MAGu_virus_DB_v1.1_metadata.tsv 
+  208  less /scratch/dfouts/DBs_dir/marker-magu/v1.1/Marker-MAGu_markerDB.fna 
+  209  grep "CHVD_tisza@SAMEA1906416_a1_ct135852_vs1@Myoviridae__sp._ctyjS1" /scratch/dfouts/DBs_dir/marker-magu/v1.1/Marker-MAGu_markerDB.fna
+  210  s
+  211  ls
+  212  cd hecatomb.out/
+  213  ls
+  214  cd results/
+  215  ls
+  216  grep -c "^>" merged_assembly.fasta
+  217  getlengthsmerged_assembly.fasta
+  218  getlengths merged_assembly.fasta
+  219  conda deactivate
+  220  getlengths merged_assembly.fasta
+  221  getlengths merged_assembly.fasta > contig_lengths.txt
+  222  cd ..
+  223  ls
+  224  ls processing/
+  225  ls processing/assembly/
+  226  ls processing/assembly/FLYE/
+  227  more processing/assembly/FLYE/assembly_info.txt 
+  228  ls processing/
+  229  ls processing/mapping/
+  230  ls processing/mmseqs_nt_primary/
+  231  ls 
+  232  ls benchmarks/
+  233  cd benchmarks/
+  234  more combine_coverage.txt 
+  235  more calculate_gc.seqtable.txt 
+  236  cd ..
+  237  ls
+  238  ls trimnami/
+  239  ls trimnami/results/
+  240  ls trimnami/results/fastp/
+  241  ls trimnami/results/
+  242  ls trimnami/
+  243  more trimnami/trimnami.log 
+  244  ls            
+  245  ls processing/
+  246  pwd
+  247  cd results/
+  248  ls
+  249  ls -lt
+  250  pwd
+  251  ls
+  252  more sample_coverage.tsv 
+  253  ls
+  254  more sampleSeqCounts.tsv 
+  255  more bigtable.tsv 
+  256  grep "5360_002_S56:1:2.051e-05:269019" bigtable.tsv 
+  257  more bigtable.tsv 
+  258  grep "Bacteria" bigtable.tsv 
+  259  ls
+  260  cat bigtable.tsv | wc -l
+  261  cut -f1 bigtable.tsv 
+  262  cut -f1 bigtable.tsv | sort -u | wc -l
+  263  cut -f1 bigtable.tsv | grep "S55" | sort -u | wc -l
+  264  cut -f1 bigtable.tsv | grep "S56" | sort -u | wc -l
+  265  ls
+  266  cd ..
+  267  ls
+  268  cd results/
+  269  more seqtable.properties.tsv 
+  270  grep -c "^>" seqtable.fasta 
+  271  more seqtable.fasta 
+  272  ls
+  273  grep -c "^>" seqtable.unclassified.fasta 
+  274  grep -c "^>" seqtable.fasta 
+  275  ls /scratch/dfouts/
+  276  ls /scratch/dfouts/phage_genomes/
+  277  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/
+  278  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/
+  279  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/
+  280  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/
+  281  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/
+  282  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/
+  283  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/pharokka/
+  284  more /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/pharokka/history_annotation.txt 
+  285  more /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/
+  286  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/
+  287  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/
+  288  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_spades_assembly/
+  289  ls /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/
+  290  getlengths /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/assembly.fasta 
+  291  ls -lt /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/
+  292  lsgrasta -h -C -L /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/assembly.fasta /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/2.seq | more
+  293  lsgrasta -h -C -L /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/assembly.fasta /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/1.seq | more
+  294  lsgrasta -h -C -L /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/assembly.fasta /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/end_1.seq | more
+  295  lsgrasta -h -C -L /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/assembly.fasta /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/JCVI_BCC02_unicycler_assembly/1.seq | more
+  296  cd scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/
+  297  cd /scratch/dfouts/phage_genomes/Burkholderia_phages_dir/BCC02/JCVI_SeqCoast_seq/
+  298  ls
+  299  cd JCVI_BCC02_spades_assembly/
+  300  ls
+  301  cd ../JCVI_BCC02_unicycler_assembly/
+  302  ls
+  303  lsgrasta -h -C -L assembly.fasta 1.seq | more
+  304  lsgrasta -h -C -L assembly.fasta 2.seq | more
+  305  lsgrasta -h -C -L assembly.fasta 1.seq | more
+  306  ls
+  307  ls ../../
+  308  lsgrasta -h -C -L assembly.fasta ../../BCC02.fasta | more
+  309  ls
+  310  pwd
+  311  cd ..
+  312  ls
+  313  cd JCVI_BCC02_spades_assembly/
+  314  ls
+  315  getlengths contigs.fasta | sort -nrk2
+  316  lsgrasta -h -C -L contigs.fasta ../../BCC02.fasta | more
+  317  lsgrasta -h -C -L contigs.fasta ../../BCC02.fasta | more
+  318  lsgrasta -h -C -L contigs.fasta ../../BCC02.fasta | more
+  319  getlengths ../../BCC02.fasta 
+  320  getlengths ../JCVI_BCC02_unicycler_assembly/assembly.fasta 
+  321  getlengths contigs.fasta | sort -nrk2
+  322  cd ..
+  323  mkdir nucmer_mapping_dir
+  324  cd nucmer_mapping_dir/
+  325  ln -s ../../BCC02.fasta .
+  326  ln -s ../JCVI_BCC02_unicycler_assembly/assembly.fasta .
+  327  nucmer --mum BCC02.fasta assembly.fasta 
+  328  mummerplot -postscript --color out.delta 
+  329  mummerplot -h
+  330  ls
+  331  which mummerplot
+  332  which nucmer
+  333  nano /scratch/dfouts/bin/mummerplot
+  334  nano /scratch/dfouts/bin/mummerplot
+  335  nano /scratch/dfouts/bin/mummerplot
+  336  ls
+  337  more out.fplot 
+  338  mummerplot --SNP --color out.delta 
+  339  mummerplot --postscript --color out.delta 
+  340  mummerplot --color out.delta 
+  341  ls
+  342  top
+  343  which blastp
+  344  cd /scratch/dfouts/packages/
+  345  ls
+  346  cd ../bin/
+  347  ls
+  348  echo $ARCH
+  349  echo $HOST
+  350  uname
+  351  lscpu
+  352  ls
+  353  wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.16.0+-x64-linux.tar.gz
+  354  ls
+  355  tar -xvzf ncbi-blast-2.16.0+-x64-linux.tar.gz 
+  356  ls
+  357  rm ncbi-blast-2.16.0+-x64-linux.tar.gz 
+  358  conda deactivate
+  359  echo $SHELL
+  360  nano /scratch/dfouts/bashrc_Rockville
+  361  source /scratch/dfouts/bashrc_Rockville
+  362  which blastp
+  363  which blastn
+  364  cd /scratch/dfouts/bin/phage_finder_v2.5_4docker/
+  365  nano phage_finder.ini
+  366  ls
+  367  cd DB/
+  368  ls
+  369  which makeblastdb
+  370  makeblastdp -h
+  371  makeblastdp
+  372  makeblastdb -h
+  373  makeblastdb -in phage_03_25_19.db -dbtype prot
+  374  ls -lt
+  375  cd ../example/NC_002947_test_v2.6/
+  376  ls
+  377  ../../bin/phage_finder.sh NC_002947
+  378  more ncbi.out 
+  379  ls
+  380  cd strict_dir/NC_002947_dir/
+  381  ls
+  382  more NC_002947_4_phregions_10000_5000_1e-05.out 
+  383  more ../PFPR_tab.txt 
+  384  which diamond
+  385  cd /scratch/dfouts/packages/
+  386  wget https://github.com/bbuchfink/diamond/releases/download/v2.1.10/diamond-linux64.tar.gz
+  387  tar -xvzf diamond-linux64.tar.gz 
+  388  ls
+  389  ./diamond -h
+  390  ./diamond help
+  391  cd ../bin/
+  392  ln -s /scratch/dfouts/packages/diamond .
+  393  which diamond
+  394  cd /scratch/dfouts/bin/phage_finder_v2.5_4docker/example/NC_002947_test_v2.6/
+  395  ls
+  396  cd ../DB
+  397  cd ../../DB/
+  398  ls
+  399  diamond makedb phage_03_25_19.db
+  400  diamond -makedb phage_03_25_19.db
+  401  diamond makedb
+  402  more phage_03_25_19.db
+  403  diamond makedb
+  404  diamond makedb --in phage_03_25_19.db --db phage_03_25_19_diamond.db
+  405   ls
+  406  cd ..
+  407  ls
+  408  cd example/NC_002947_test_v2.6/
+  409  ls
+  410  diamond help
+  411  diamond blastp
+  412  ls
+  413  grep "blastp" ../../bin/phage_finder.sh 
+  414  diamond blastp --db /scratch/dfouts/bin/phage_finder_v2.5_4docker/DB/phage_03_25_19_diamond.db.dmnd --query NC_002947.pep -evalue 0.001 -outfmt 6 -out diamond.out 
+  415  diamond blastp --db /scratch/dfouts/bin/phage_finder_v2.5_4docker/DB/phage_03_25_19_diamond.db.dmnd --query NC_002947.pep --evalue 0.001 --outfmt 6 --out diamond.out 
+  416  more diamond.out 
+  417  cat diamond.out | wc -l
+  418  cat ncbi.out | wc -l
+  419  head diamond.out 
+  420  head ncbi.out 
+  421  grep "PP3864_gi26990569" diamond.out 
+  422  grep "PP3864_gi26990569" ncbi.out 
+  423  ls
+  424  mv strict_dir strict_dir_ncbi
+  425  more strict_dir_ncbi/phage_phinder.log 
+  426  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  427  ls
+  428  more strict_dir/PFPR_tab.txt 
+  429  more ../NC_002947/strict_dir/PFPR_tab.txt 
+  430  ls
+  431  cd strict_dir
+  432  ls
+  433  ls ../strict_dir_ncbi/
+  434  more ../strict_dir_ncbi/PFPR_tab.txt 
+  435  pwd
+  436  cd ../../..
+  437  ls
+  438  cd bin/
+  439  ls
+  440  nano Phage_Finder_v2.6.pl.old 
+  441  nano Phage_Finder_v2.6.pl
+  442  cd ../example/NC_002947_test_v2.6/
+  443  ls
+  444  ../../bin/Phage_Finder_v2.6.pl.old -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  445  less ../../bin/Phage_Finder_v2.6.pl
+  446  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  447  less ../../bin/Phage_Finder_v2.6.pl
+  448  ../../bin/Phage_Finder_v2.6.pl.old -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  449  more strict_dir/PFPR_tab.txt 
+  450  less ../../bin/Phage_Finder_v2.6.pl
+  451  less ../../bin/Phage_Finder_v2.6.pl
+  452  cd strict_dir/NC_002947_dir/
+  453  ls
+  454  more NC_002947_4_phregions_10000_5000_1e-05.out
+  455  less ../../bin/Phage_Finder_v2.6.pl
+  456  less ../../../bin/Phage_Finder_v2.6.pl
+  457  less ../../../../bin/Phage_Finder_v2.6.pl
+  458  less ../../../../bin/Phage_Finder_v2.6.pl
+  459  less ../../../../bin/Phage_Finder_v2.6.pl
+  460  perldoc open
+  461  perldoc select
+  462  perldoc filehandle
+  463  perldoc format
+  464  perldoc open
+  465  nano ../../../../bin/Phage_Finder_v2.6.pl
+  466  nano ../../../../bin/Phage_Finder_v2.6.pl
+  467  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  468  ls
+  469  cd ..
+  470  ls
+  471  cd ..
+  472  ls
+  473  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  474  nano ../../../../bin/Phage_Finder_v2.6.pl
+  475  nano ../../bin/Phage_Finder_v2.6.pl
+  476  nano ../../bin/Phage_Finder_v2.6.pl
+  477  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  478  nano ../../bin/Phage_Finder_v2.6.pl
+  479  less ../../bin/Phage_Finder_v2.6.pl
+  480  nano ../../bin/Phage_Finder_v2.6.pl
+  481  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  482  nano ../../bin/Phage_Finder_v2.6.pl
+  483  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  484  nano ../../bin/Phage_Finder_v2.6.pl
+  485  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  486  nano ../../bin/Phage_Finder_v2.6.pl
+  487  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  488  nano ../../bin/Phage_Finder_v2.6.pl
+  489  ../../bin/Phage_Finder_v2.6.pl -t diamond.out -i phage_finder_info.txt -r tRNAscan.out -n tmRNA_aragorn.out -c ncRNA_cmscan.out -A NC_002947.con -S
+  490  more strict_dir/PFPR_tab.txt 
+  491  history > history.txt

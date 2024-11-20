@@ -1,0 +1,1000 @@
+     7	12:34	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/bin/
+     8	12:37	ls /usr/local/archdata/9043/projdata/MGX/localenv/anaconda/envs/16s_pipeline/
+     9	12:37	ls /usr/local/archdata/9043/projdata/MGX/localenv/anaconda/envs/16s_pipeline/include/
+    10	12:37	ls /usr/local/archdata/9043/projdata/MGX/localenv/#+17147540#+1less Sma78ls /usr/local/archdata/9043/projcd Sma78_S67
+    11	6:40	bin/transterm -h
+    12	6:40	cd CDC_core1_dir/
+    13	6:41	mkdir linear_figs_dir
+    14	6:41	cd linear_figs_dir/
+    15	6:42	more ../region.coords
+    16	6:42	getlengths ../region.fa
+    17	6:42	mkdir peptide_1_L_brevis_dir
+    18	6:43	mkdir peptides2_3_4_L_brevis_dirc#+1713881175
+    19	9:44	less Sma78_S67_abrigate_ncbi.tab
+    20	9:48	less Sma78_S67_abrigate_res.tab
+    21	9:56	more Sma78_S67_trimmed.fasta
+    22	9:58	less Sma78_S67_trimmed.fastac#+17147574#+1less Sma78ls bin/
+    23	18:41	cd phiEKp142/
+    24	18:41	cd hybrid_assembly/
+    25	18:42	cd pharokka/
+    26	18:42	more history_pharokka.txt
+    27	18:44	cd phage_genomes/
+    28	18:44	mkdir Burkholderia_phages_dir
+    29	18:44	cd Burkholderia_phages_dir/
+    30	18:44	mkdir BCC02
+    31	18:44	mkdir BCC05
+    32	18:44	mkdir BCC07
+    33	18:44	mkdir BCC08
+    34	18:45	nano parroka_command.txt
+    35	18:49	scp lsub2:/usr/local/devel/ANNOTATION/dfouts/BCC* .
+    36	18:49	scp lsub2:/usr/local/devel/ANNOTATION/dfouts/BCC\* .
+    37	18:49	mv BCC02.fasta BCC02/
+    38	18:49	mv BCC05.fasta BCC05/
+    39	18:49	mv BC705.fasta BCC07/
+    40	18:49	mv BCC07.fasta BCC07/
+    41	18:50	mv BCC08.fasta BCC08/
+    42	18:50	cd BCC02
+    43	18:50	more BCC02.fasta
+    44	18:50	source /scratch/dfouts/bashrc_Rockville
+    45	8:13	ls /scratch/dfouts/lib/Modules/
+    46	8:13	ls /scratch/dfouts/lib/Modules/Bio/
+    47	9:19	ls /scratch/dfouts/Burkholderia_dir/
+    48	9:19	ls /scratch/dfouts/Burkholderia_dir/DVT1180/tmp_gbff_dir/
+    49	9:20	ls /scratch/dfouts/Burkholderia_dir/DVT1180/
+    50	9:21	more /scratch/dfouts/Burkholderia_dir/DVT1180/phage_finder_info.txt
+    51	9:58	conda env list
+    52	9:59	ls output_dir
+    53	10:06	cd output_dir
+    54	10:07	ls -lt Kp_Africa_ggrasp_ranks.txt
+    55	10:07	ls *ranks*
+    56	10:07	ls -lt final_Kp_ggrasp_ranks.txt
+    57	10:07	more final_Kp_ggrasp_ranks.txt
+    58	10:18	cat final_Kp_ggrasp_ranks.txt | perl -ne 'chomp; @a=split(/\t/); print "$a[2]\n";'
+    59	10:19	cat final_Kp_ggrasp_ranks.txt | perl -ne 'chomp; @a=split(/\t/); print "$a[1]\n";'
+    60	10:19	cat final_Kp_ggrasp_ranks.txt | perl -ne 'chomp; @a=split(/\t/); print "$a[0]\n";'
+    61	10:20	cat final_Kp_ggrasp_ranks.txt | perl -ne 'chomp; @a=split(/\t/); if ($a[1] != 7) {print "$a[0]\t$a[1]\n";}'
+    62	10:20	cat final_Kp_ggrasp_ranks.txt | perl -ne 'chomp; @a=split(/\t/); if ($a[1] != 7) {print "$a[0]\t$a[1]\n";}' | more
+    63	10:21	cat final_Kp_ggrasp_ranks.txt | perl -ne 'chomp; @a=split(/\t/); if ($a[1] != 7) {print "$a[0]\t$a[1]\n";}' > final_ggrasp_ranks_no7.lst
+    64	10:21	cat final_Kp_ggrasp_ranks.txt | wc -l
+    65	10:27	more ref3.lst
+    66	10:27	more final_ggrasp_ranks_no7.lst
+    67	10:27	cat final_ggrasp_ranks_no7.lst | cut -f1
+    68	10:28	cat final_ggrasp_ranks_no7.lst | cut -f1 > final_no7_genomes.lst
+    69	10:28	grep -vi final_no7_genomes.lst ref3.lst
+    70	10:28	grep -vi final_no7_genomes.lst ref3.lst | wc -l
+    71	10:28	grep -vf final_no7_genomes.lst ref3.lst | wc -l
+    72	10:28	grep -f final_no7_genomes.lst ref3.lst | wc -l
+    73	10:28	cat final_ggrasp_ranks_no7.lst | wc -l
+    74	10:29	grep -f final_no7_genomes.lst ref3.lst > ref4.lst
+    75	10:40	grep "mash" history*
+    76	10:41	grep "mash sketch" history*
+    77	10:42	mash -h
+    78	10:42	/scratch/dfouts/bin/mash -h
+    79	10:42	/scratch/dfouts/bin/mash sketch -h
+    80	10:44	/scratch/tclarke/devel/bin/run_multiple_mash.pl -h
+    81	18:31	more history_fianl_all-v-all_mash.txt
+    82	18:32	ls history_*
+    83	18:32	more history_final_ggrasp.txt
+    84	18:38	ls *rand*
+    85	18:39	ls *rank*
+    86	13:33	less phage_finder_info.txt
+    87	13:34	cd strict_dir/
+    88	13:35	cd NZ_CP046337_dir/
+    89	13:35	less NZ_CP046337_4_phreport_10000_5000_1e-05.out
+    90	13:35	nano phage_exclude_v6.lst
+    91	13:36	cd /scratch/dfouts/Burkholderia_dir/SAMN11056434/
+    92	13:44	less ncbi.out
+    93	14:20	nano /scratch/dfouts/bin/phage_finder_v2.5/bin/Phage_Finder_v2.5.pl
+    94	14:21	nano /scratch/dfouts/bin/phage_finder_v2.5/lib/PHAGE/Phage_subs.pm
+    95	11:40	mkdir PSC_ITS
+    96	12:50	tar -xvzf sh_qiime_release_04.04.2024.tgz
+    97	12:50	ls developer/
+    98	13:03	more sh_taxonomy_qiime_ver10_97_04.04.2024.txt
+    99	13:06	grep -f THFgenus_uniq_clean.txt sh_taxonomy_qiime_ver10_97_04.04.2024.txt > sh_taxonomy_qiime_ver10_97_04.04.2024_THF.txt
+   100	13:06	grep -f THFgenus_uniq_clean.txt sh_taxonomy_qiime_ver10_97#+1715366407
+   101	13:06	cat sh_taxonomy_qiime_ver10_97_04.04.2024_THF.txt | wc -l
+   102	13:07	cat sh_taxonomy_qiime_ver10_97_04.04.2024_THF.txt | cut -f1
+   103	13:08	cat sh_taxonomy_qiime_ver10_97_04.04.2024_THF.txt | cut -f1 > sh_taxonomy_qiime_ver10_97_04.04.2024_THF_ids.txt
+   104	13:10	/usr/local/devel/ANNOTATION/dfouts/bin/select-seqs-from-multifasta.perl sh_refs_qiime_ver10_97_04.04.2024.fasta sh_taxonomy_qiime_ver10_97_04.04.2024_TH#+1715372561
+   105	13:23	ITSx -h
+   106	13:24	chmod 777 ITSx_1.1.2
+   107	13:24	chmod -R 777 ITSx_1.1.2
+   108	13:24	ls ITSx_1.1.2
+   109	13:24	cd ITSx_1.1.2
+   110	13:24	./ITSx -h
+   111	13:27	/proc/cpuinfo
+   112	13:28	more ../ITSx_1.1.2/README.txt
+   113	13:29	hmmsearch -h
+   114	13:29	hmmsearch -v
+   115	13:30	which hmmsearch
+   116	13:30	ln -s /usr/local/bin/hmmsearch .
+   117	13:33	../ITSx_1.1.2/ITSx -i sh_refs_qiime_ver10_97_04.04.2024_THF.fasta -i UNITE10_gTHFdb -cpu 4 -multi_thread T -po#+1715373773
+   118	13:33	../ITSx_1.1.2/ITSx -i sh_refs_qiime_ver10_97_04.04.2024_THF.fasta -i UNITE10_gTHFdb -cpu 4 -multi_thread T -positions source ~/.cshrc
+   119	13:42	cleanFasta sh_refs_qiime_ver10_97_04.04.2024_THF.fasta
+   120	13:43	more sh_refs_qiime_ver10_97_04.04.2024_THF.fasta
+   121	13:43	../ITSx_1.1.2/ITSx -i sh_refs_qiime_ver10_97_04.04.2024_THF.fasta -i UNITE10_gTHFdb -cpu 4 -multi_thread T -positions T -not_found T -detailed_results T -partial 49 -save_regions ITS1 -table T
+   122	13:43	../ITSx_1.1.2/ITSx -i sh_refs_qiime_ver10_97_04.04.2024_THF.fasta -i UNITE10_gTHFdb cd ../PSC_ITS/
+   123	13:43	more ITSx_out.summary.txt
+   124	13:57	../ITSx_1.1.2/ITSx -i sh_refs_qiime_ver10_97_04.04.2024_THF.fasta -o UNITE10_gTHFdb -cpu 4 -multi_thread T -positions T -not_found T -detailed_results T -partial 49 -save_regions ITS1 -table T
+   125	13:58	../ITSx_1.1.2/ITSx -i sh_refs_qiime_ver10_97_04.04.2024_THF.fasta -o UNITE10_gTHFdb -cpu 16 -murm sh_refs_qiime_ver10_99_04.04.2024.fasta sh_taxonomy_qiime_ver10_99_04.04.2024.txt sh_refs_qiime_ver10_dynamicrm ITSx_*
+   126	14:00	ls ITSx_temp_directory__UNITE10_gTHFdb/
+   127	14:45	rm -rf developer/
+   128	14:46	rm sh_qiime_release_04.04.2024.tgz
+   129	14:46	more QIIME_ITS_readme_04.04.2024.pdf
+   130	14:48	rm sh_refs_qiime_ver10_99_04.04.2024.fasta sh_taxonomy_qiime_ver10_99_04.04.2024.txt sh_refs_qiime_ver10_dynamic_04.04.2024.fasta sh_taxonomy_qiime_ver10_dynamic_04.04.2024.txt
+   131	15:17	ls fastq/*.gz | wc -l
+   132	15:17	ls *.gz | wc -l
+   133	15:18	ls *.gz | wc -l | perl -ne 'chomp; $a=$_/2; print "$a\n";'
+   134	7:52	more UNITE10_gTHFdb.problematic.txt
+   135	7:53	more UNITE10_gTHFdb.summary.txt
+   136	7:54	grep -c "^>" UNITE10_gTHFdb.ITS1.fasta
+   137	7:54	grep -c "^>" sh_refs_qiime_ver10_97_04.04.2024_THF.fasta
+   138	7:54	grep -c "^>" UNITE10_gTHFdb.Ils *.gz | wc -l | perl nano ITS1-F.fa
+   139	7:56	lsgrasta -h -C -L UNITE/usr/local/devel/ANNOTATION/dfouts/bin/lsgrasta -h /usr/local/devel/ANNOTATION/dfouts/bin/lsgrasta -h -C -L UNITE10_gTHFdb.ITS1.fas/usr/local/devel/ANNOTATION/dfoutnano ITS2.fa
+   140	7:56	lsgrasta -h -C -L UNITE10_gTHFdb.ITS1.fasta ITS1-F.fa | more
+   141	7:58	/usr/local/devel/ANNOTATION/dfouts/bin/lsgrasta -h -C -L UNITE10_gTHFdb.ITS1.fasta ITS2.fa | more
+   142	7:59	LS
+   143	7:59	/usr/local/devel/ANNOTATION/dfouts/bin/lsgrasta -h -C -Lmkdir test_data
+   144	10:42	cd test_data/
+   145	10:42	cp ../raw_data/S_15-21_S88_L001_R*_001.fastq.gz .
+   146	10:42	gunzip S_15-21_S88_L001_R1_001.fastq.gz
+   147	10:42	gunzip S_15-21_S88_/usr/local/devel/ANNO#+1715622200
+   148	10:42	gunzip S_15-21_S88_L001_R2_001.fastq.gz
+   149	10:43	lsgrasta -h -C -L S_15-21_S88_L001_R1_001.fastq ../usr/local/devel/A#+1715622219
+   150	10:43	lsgrasta -h -C -L S_15-21_S88_L001_R1_001.fastq ../IT#+1715622156
+   151	10:43	more S_15-21_S88_L001_R1_001.fastq##+1715625831w/usr/local/devel/ANNOTATION/dfouts/bin/lsgrasta#+1716563462
+   152	8:11	cd /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/
+   153	9:06	ls /usr/local/archdata/9043/projdata/MGX/bin/
+   154	9:07	ls /usr/local/archdata/9043/projdata/MGX/packages/usearch-9.2.64/
+   155	9:08	ls /usr/local/archdata/9043/projdata/MGX/localenv/bin/local#+17#+1716566ls /more /usr/local/archdata/9043/projdata/MGX/localenv/bin/#+1716567#+17/usr/localess /usr/local/archdata/9043/projdata/MGX/localenv/bin/localenv
+   156	9:08	ls /usr/local/archdata/9043/projdata/MGXcd /usr/local/devel/ANNOTATION/dfoutmore /usr/local/archdatals /usr/local/archdata/9043/projdata/MGX/##+1716566803lls /usr/local/archdata/9043/projdata/MGX/bin/
+   157	9:10	less /ls -lt /usr/local/archdata/9043/projdata/MGX/locale#+1716567020
+   158	9:28	/usr/local/archdata/9043/projdata/MGX/packages/usearch-8.1.1861/bin/usearch -h
+   159	9:28	/usr/local/archdata/9043/projdata/MGX/packages/usearch-8.1.1861/bin/usearls -lt /us#+1716568325
+   160	11:49	more /usr/local/devel/ANNOTATION/dfouts/CDC_core1_dir/region.coords
+   161	11:49	more /usr/local/devel/ANNOTATION/dfouts/CDC_core1ls /usr/local/devel#+1716584594
+   162	14:03	mv otu_ITS_pipeline_UNITE_THFdb_ITS2_partial_gte50.ini otu_ITS_pipeline_UNITE_THFdb_ITS1_PSC.ini
+   163	14:05	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline
+   164	14:06	/usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipelinmkdir Schnabl#+1716584794
+   165	14:45	dos2unix Schnabl_ITS1_PSC_manifest_R1.txt
+   166	14:45	dos2unix Schnabl_ITS1_PSC_manifest_R2.txt
+   167	14:46	dos2unix Schnabl_ITS1_PSC_manifest_combined.txt
+   168	14:46	mv Schnabl_ITS1_PSC_manifest_R1.txt Schnabl_ITS1_PSC_R1_dir/
+   169	14:46	mv Schnabl_ITS1_PSC_manifest_R2.txt Schnabl_ITS1_PSC_R2_dir/
+   170	14:46	mv Schnabl_ITS1_PSC_manifest_combined.txt Schnabl_ITS1_PSC_combined_dir/
+   171	14:52	ls /usr/local/packages/usearch-8.1.1861/bin/usearch
+   172	14:53	ls /usr/local/archdata/9043/projdata/MGX/packages/usearch-8.1.1861/bin/usearch
+   173	14:53	ls /usr/local/archdata/9043/projdata/MGX/packages/mothur-1.
+   174	14:59	grep "^>" UNITE10_gTHFdb.ITS1.fasta | sed 's/^>//' | sort > UNIls /usr/local/packages/usea#+1716587962
+   175	15:04	nano otu_ITS_pipeline_UNITE_THFdgrep "^>" UNITE#+1716588843
+   176	15:19	perl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz_1.4.1.pl -s /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSC_manifest_combined.txt -c otu_ITS_pipeline_UNITE_THFdb_ITS1_PSC.ini
+   177	15:21	perl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz_1.4.1.pl -s /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSC_manifest_combined.txt -c otu_ITS_pipeline_UNITE_THFdb_ITS1_PSC.ini -o output_dir
+   178	15:21	perl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz_1.4.1.pl -s /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSC_manifest_combined.txt -c otu_ITS_pipeline_UNITE_THFdb_ITS1_PSC.ini -o output_dir -h
+   179	15:22	perl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipelineperl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz_1.4.1.pl -s /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined#+1716589396
+   180	15:23	perl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz_1.4.1.pl -s /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSC_manifest_combined.txt -c otu_ITS_pipeline_UNITE_THFdb_ITS1_PSC.ini -o output_dir -p PSCcombined -z
+   181	15:25	perl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz_1.4.1.pl -s /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSC_manifest_combined.txt -c /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/otu_ITS_pipeline_UNITE_THFdb_ITS1_PSC.ini -o output_dir -p PSCcombined -z
+   182	15:25	cp otu_ITS_pipeline_UNITE_THFdb_ITS1_PSC.ini config.ini
+   183	15:25	perl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz_1.4.1.pl -s /local/uss_devel/ANNOTATION/dperl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz.1.4.3.pl -s /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/Sls -lt /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline
+   184	15:28	perl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz.1.4.3.pl -s /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSCperl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz_1.4.1.pl -s /local/uss_devel/ANNOTATION/dless /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz.1.4.3.pl
+   185	15:32	perl /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz_1.4.1.pl -s /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSC_manifest_combined.txt -c /local/uss_devel/ANNOTATION/dfouts/PSC_ITS/config.ini -o output_dir -p #+1717017497
+   186	14:30	more /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSC_manifest_combined.txt
+   187	14:31	/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/uparse_pipeline_with_conmore defau#+1717018280
+   188	7:03	more /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz_config_default.ini
+   189	7:03	ls /usr/local/projdata/9043/projects/MGX/packages/16s_pipeline-v1.3.0/share/Uparse_16S_pcat confi#+1717077824
+   190	7:09	ls /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/
+   191	7:09	ls /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/bin/
+   192	7:10	/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/bin/uparse_pipeline -h
+   193	7:12	ls /usr/local/archdata/9043/projdata/MGX/localenv/
+   194	7:12	ls /usr/local/archdata/9043/projdata/MGX/localenv/bin/
+   195	7:12	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/qiime
+   196	7:12	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/qiime/bin/
+   197	7:13	ls -al /usr/local/archdata/9043/projdata/MGX/localenv/envs/qiime/bin/
+   198	7:24	ls /usr/local/archdata/9043/projdata/MGX/localenv/anaconda/envs/16s_pipeline/bin
+   199	7:24	/usr/local/archdata/9043/projdata/MGX/localenv/anaconda/envs/16s_pipeline/bin/biom -h
+   200	7:24	more /usr/local/archdata/9043/projdata/MGX/localenv/anaconda/envs/16s_pipeline/bin/biom
+   201	7:25	ls /usr/local/archdata/9043/prodata/MGX/localenv/anaconda/envs/16s_pipeline/bin/python
+   202	7:25	ls /usr/local/archdata/9043/prodata/MGX/localenv/anaconda/envs/16s_pipeline/bin/
+   203	7:26	ls /usr/local/archdata/9043/projdata/MGX/localenv/anaconda/envs/16s_pipeline/bin/
+   204	7:26	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/anaconda/envs/16s_pipeline/bin/python
+   205	7:27	nano /usr/local/archdata/9043/projdata/MGX/localenv/anaconda/envs/16s_pipeline/bin/biom
+   206	7:32	cp /usr/local/archdata/9043/projdata/MGX/localenv/anaconda/envs/16s_pipeline/bin/biom /usr/local/devel/ANNOTATION/dfouts/bin/
+   207	7:33	nano /usr/local/devel/ANNOTATION/dfouts/bin/biom
+   208	7:38	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin
+   209	7:41	more /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/qiime
+   210	7:43	/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/uparse_pipeline_with_config.sh -c softviz_config_default.ini
+   211	7:43	/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/uparse_pipeline/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_p/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/uparse_pipeli/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16#+1717080427
+   212	7:47	eval "$/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipelin#+1717081178
+   213	8:14	ls -al /usr/local/archdata/9043/projdata/MGX/packages/
+   214	8:15	ls -al /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/
+   215	8:15	ls -al /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/bin/
+   216	8:15	ls -al /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/
+   217	13:03	ls /home/dfouts
+   218	13:03	ls /home/
+   219	13:04	ls /home/tclarke
+   220	13:06	cp /usr/local/devel/ANNOTATION/tclarke/new_uparse_pipeline_v2.5.sh /usr/local/devel/ANNOTATION/dfouts/bin/
+   221	13:08	more Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSC_manifest_combined.txt
+   222	14:53	ls /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline
+   223	14:54	ls /usr/local/archdata/9043/projdata/MGX/localenv/share/02_path_environment_manipulations
+   224	14:55	ls /usr/local/archdata/9043/projdata/MGX/localenv/share/
+   225	14:56	find "yap_viz_pipeline" /usr/local/archdata/9043/projdata/MGX/
+   226	14:56	find /usr/local/archdata/9043/projdata/MGX/ -name "yap"
+   227	14:56	find /usr/local/archdata/9043/projdata/MGX/ -name "yap_viz_pipeline"
+   228	14:58	find /usr/local/archdata/9043/projdata/MGX/localenv/ -name "yap_viz_pipeline"
+   229	15:00	find /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/ -name "yap_viz_pipeline"
+   230	15:01	find /usr/local/archdata/9043/projdata/MGX/packages/ -name "yap_viz_pipeline"
+   231	15:02	find /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.* -name "yap_viz_pipeline"
+   232	15:05	find /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.* -name "initialYAPviz.R"
+   233	15:06	find /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.* -name "uparse"
+   234	15:07	find /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.* -name "uparse*"
+   235	15:07	ls /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/bin/uparse_pipeline
+   236	15:07	ls /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/bin/
+   237	15:07	more /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/bin/uparse_pipeline
+   238	15:45	more /usr/local/archdata/9043/projdata/MGX/localenv/envs/
+   239	15:46	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/qiime
+   240	20:24	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/
+   241	20:36	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/blast
+   242	20:36	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/blast/bin/
+   243	21:02	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/include/
+   244	21:04	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/SOFTviz
+   245	21:04	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/SOFTviz
+   246	21:09	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/
+   247	21:19	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/
+   248	21:26	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/html_static
+   249	21:26	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/html_static/js/
+   250	21:28	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/html_static/css
+   251	21:28	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/html_static/flex_index_files/
+   252	21:29	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/man
+   253	21:29	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/man/man1/
+   254	21:34	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/lib
+   255	21:36	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/var
+   256	21:37	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/var/log/
+   257	21:39	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/include/
+   258	21:54	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/
+   259	21:55	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline//bin/
+   260	21:56	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/
+   261	22:10	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/bin
+   262	22:11	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/share
+   263	22:13	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/perlbrew/
+   264	22:14	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/rvm/
+   265	22:14	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/rvm/environments/
+   266	22:15	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/
+   268	9:19	cat Schnabl_ITS1_PSC_manifest_combined.txt | head
+   269	9:20	cat Schnabl_ITS1_PSC_manifest_combined.txt | cut -f1,2,3
+   270	9:21	cat Schnabl_ITS1_PSC_manifest_combined.txt | cut -f1,2,3 | sed 's/\.\./\/usr\/local\/devel\/ANNOTATION\/dfouts\/PSC_ITS/g'
+   271	9:21	cat Schnabl_ITS1_PSC_manifest_combined.txt | cut -f1,2,3 | sed 's/\.\./\/usr\/local\/devel\/ANNOTATION\/dfouts\/PSC_ITS/g' | grep -v "^#" > PSC_ITS_manifest_paired.txt
+   272	9:22	ls /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/raw_data/S_113-22_S1_L001_R1_001.fastq.gz
+   273	9:22	ls /usr/local/devel/ANNOTATION/dfou
+   274	9:22	ts/PSC_ITS/raw_data/S_114-22_S3_L001_R2_001.fastq.gz
+   275	9:22	ls /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/raw_data/S_86-22_S6_L001_R2_001.fastq.gz
+   276	9:22	mkdir atttic
+   277	9:22	mv atttic attic
+   278	9:22	mv Schnabl_ITS1_PSC_manifest_combined.txt attic/
+   279	9:43	/usr/local/devel/ANNOTATION/dfouts/bin/new_uparse_pipeline_v2.5.sh -p 1 -e 1.0 PSC_ITS_manifest_paired.txt
+   280	9:44	/usr/local/devel/ANNOTATION/dfouts/bin/new_uparse_pipeline_v2.5.sh -p 1 -e 1.0 /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/PSC_ITS_manifest_paired.txt
+   281	9:46	cd ../raw_data/
+   282	9:49	gunzip *
+   283	9:49	nano /usr/local/devel/ANNOTATION/dfouts/bin/new_uparse_pipeline_v2.5.sh
+   284	9:50	cat PSC_ITS_manifest_paired.txt | sed 's/\.gz//g'
+   285	9:50	cat PSC_ITS_manifest_paired.txt | sed 's/\fastq.gz/fastq/g'
+   286	9:51	cat PSC_ITS_manifest_paired.txt | sed 's/\fastq\.gz/fastq/g'
+   287	9:51	cat PSC_ITS_manifest_paired.txt | sed 's/fastq\.gz/fastq/g'
+   288	9:51	cat PSC_ITS_manifest_paired.txt | sed 's/fastq\.gz/fastq/g' > PSC_ITS_manifest_paired.txt2
+   289	9:51	cp PSC_ITS_manifest_paired.txt2 PSC_ITS_manifest_paired.txt
+   290	9:51	mv PSC_ITS_manifest_paired.txt2 attic/
+   291	9:51	ls ../raw_data/
+   292	7:30	less mothur.1717175357.logfile
+   293	7:32	/usr/local/devel/ANNOTATION/dfouts/bin/new_uparse_pipeline_v2.5.sh -h
+   294	7:36	less /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/history_make_udb.txt
+   295	7:37	more sh_taxonomy_qiime_ver10_97_04.04.2024_THF_ids.txt
+   296	7:37	more /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/sh_taxonomy_qiime_ver10_97_04.04.2024_THF_ids.txt
+   297	7:38	ls -lt /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/
+   298	7:38	more /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/sh_taxonomy_qiime_ver10_97_04.04.2024_THF.txt
+   299	7:43	less /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/UNITE10_gTHFdb.ITS1.fasta
+   300	7:46	history | grep -i "harkins"
+   301	7:49	more /usr/local/devel/ANNOTATION/tclarke/new_uparse_pipeline_v2.5.sh
+   302	7:50	more /usr/local/devel/ANNOTATION/tclarke/SILVA/SILVA_138.1_SSURef_NR99_tax_silva.fasta
+   303	7:52	more mothur.1717175357.logfile
+   304	7:53	less /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/sh_taxonomy_qiime_ver10_97_04.04.2024_THF.txt
+   305	7:56	ls /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/
+   306	7:56	grep -t "^>" /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/UNITE10_gTHFdb.ITS1.fasta
+   307	7:56	grep -c "^>" /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/UNITE10_gTHFdb.ITS1.fasta
+   308	7:57	grep -c "^>" /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/sh_refs_qiime_ver10_97_04.04.2024_THF.fasta
+   309	7:58	grep -c "^>" /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/sh_taxonomy_qiime_ver10_97_04.04.2024_THF.txt
+   310	7:58	cat /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/sh_taxonomy_qiime_ver10_97_04.04.2024_THF.txt | wc -l
+   311	7:59	grep "^>" UNITE10_gTHFdb.ITS1.fasta > UNITE10_gTHFdb.ITS1.lst
+   312	8:02	cat UNITE10_gTHFdb.ITS1.lst
+   313	8:02	cat UNITE10_gTHFdb.ITS1.lst | perl -n 'chomp; @a=split(/\s/); print "$a[0]\n";'
+   314	8:02	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); print "$a[0]\n";'
+   315	8:03	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/|/); '
+   316	8:03	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\|/); '
+   317	8:03	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\|/); print "$a[0]\n"'
+   318	8:06	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\|/); $id ~= s/^>//,$a[0]; print "$id\n"'
+   319	8:07	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\|/); $id = $a[0]; $id =~ s^>//; print "$id\n"'
+   320	8:07	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\|/); $id = $a[0]; $id ~= s^>//; print "$id\n"'
+   321	8:07	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\|/); $id = $a[0]; $suffix = $a[1] . "|" . $a[2]; $id =~ s/^>//; print "$id, $suffix\n"'
+   322	8:10	head cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp;#+1717427466
+   323	8:11	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); @b=split(/\|/), $a[0]; $id = $b[0]; $suffix = $b[1] . "|" . $a[2]; $id =~ s/^>//; print "$id, $suffix\n"'
+   324	8:13	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); @b=split(/\|/), $a[0]; $id = $b[0]; $suffix = $b[1] . "|" . $a[2]; $id =~ s/^>//; $result=`system(grep "$b[0]" sh_taxonomy_qiime_ver10_97_04.04.2024.txt)`; print "$result\n";'
+   325	8:14	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp;cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; $id =~ s/^ > // ; $result=`grep "$id" sh_taxonomy_qiime_ve#+1717427691
+   326	8:41	more otu_table.qfilter.L.EE1.0.txt
+   327	9:24	ls *.ini'=
+   328	9:24	more otu_ITS_pipeline_UNITE_THFdb_ITS1_PSC.ini
+   329	9:35	more /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/CONStest3.R
+   330	9:37	less /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/CONStest3.R
+   331	9:43	ls *.ini
+   332	9:44	ls attic/
+   333	9:44	more attic/Schnabl_ITS1_PSC_manifest_combined.txt
+   334	9:47	cat attic/Schnabl_ITS1_PSC_manifest_combined.txt | cut -f1,4,5
+   335	9:47	cat attic/Schnabl_ITS1_PSC_manifest_combined.txt | cut -f1,4,5 | perl -ne 'chomp; @a=split(/\t/); print "$a[0],$a[1],$a[2]\n";'
+   336	9:48	cat attic/Schnabl_ITS1_PSC_manifest_combined.txt | cut -f1,4,5 | perl -ne 'chomp; @a=split(/\t/); print "$a[0],$a[1],$a[2]\n";' > manifest_viz.csv
+   337	9:49	cat attic/Schnabl_ITS1_PSC_manifest_combined.txt | cut -f1,4,5 | perl -ne 'chomp; @a=split(/\t/); print "$a[0],$a[1],$a[2],\n";' > manifest_viz.csv
+   338	9:49	cat attic/Schnabl_ITS1_PSC_manifest_combined.txt | cut -f1,4,5 | perl -ne 'chomp; @a=split(/\t/); print "$a[0],$a[1],$a[2],\n";' > manifestcat attic/Schnabl_ITS1_PSC_manifest_combined#+1717433514
+   339	9:49	nano manifest_viz.csv
+   340	4:48	ls Sma55_S45_trim.fasta
+   341	4:48	cd nanopore_dir/
+   342	4:48	ls phage_genomes/JCVI_WWKp/us#+1714873278
+   343	4:48	mac2unix peptide2cd ../JCVI_WWKp1_spades_ass#+17138#+1714mac2unicd /scratch/dfouts/package#+1#+17148732cd linear_figs_dir/pe#+1714873260
+   344	4:48	cd peptides2_3cd JCVI_WWKp1_uni#+1713881184
+   345	4:48	nano run_multi_checkM.sh &
+   346	4:48	ls /usr/local/JTC/data/prod/solexa_depot/230825_M04586_0943_000000#+170768631#+grep -c "C2ls /usr/local/JTC/data/prod/solexa_depogrep -c "C2D60_RS" shared_clusters.txt
+   347	4:48	/usr/local/devel/ANNOTATION/dfouts/bin/lsgrasta -h -C -L S_15-21_S88_L001_R1_001.fastq ../ITS2.fa | more
+   348	4:48	/usr/local/devel/ANNOTATION/dfouts/bin/new_uparse_pipeline_v2.5.sh -p -e 1.0 PSC_ITS_manifest_paired.txt
+   349	4:48	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); @b=split(/\|/), $a[0]; $id = $b[0]; $suffix = $b[1] . "|" . $a[2]; $id =~ s/^>//; $result=`grep "$id"#+1717428754
+   350	4:48	cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); @b=split(/\|/), $a[0]; $id = $b[0]; $suffix = $b[1cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); @b=split(/\|/), $a[0]; $id = $b[0]; $suffix = $b[1] . "|" . $a[2]; $id =~ s/^>//; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt`; @cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $scat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); @b=split(/\|/), $a[0]; $id = $b[0]; $suffix = $b[1] . "|" . $a[2]; $id =~ s/^>//; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt`; @d=split(/\t/,$result);cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); @b=split(/\|/), $a[0]; $id = $b[0]; $suffix = $b[1] . "|" . $a[2]; $id =~ s/^>//; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt`; @d=split(/\t/,$rcat UNITE10_gTHFdb.ITS1.lst | pcat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix = $b[1cat UNITE10_gTHFdb.ITS1.lst | perl -ne \'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); @b=split(/\|/), $a[0]; $id = $b[0]; $suffix = $b[1] . "|" . $a[2]; $id =~ s/^>//; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt`; @cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $scat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp; @a=split(/\s/); @b=split(/\|/), $a[0]; $id = $b[0]; $suffix = $b[1] . "|" . $a[2]; $id =~ s/^>//; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt`; @d=split(/\t/,$result);cat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp [0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; $id =~ s/^ > // ; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt` ; @d=split ( /\t/,$rcat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffcat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; $id =~ s/^ > // ; $result=chomp ( `grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt` ) ; @d=split ( /\t/,$rcat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffcat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; $id =~ s/^ > // ; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt` ; @d=split ( /\t/,chomp ( $resucat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $sucat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; $id =~ s/^ > // ; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt` ; @d=split ( /\t/,chomp ( $[0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; $id =~ s/^ > // ; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt` ; @d=split ( /\t/,$rcat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffcat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; $id =~ s/^ > // ; $result=chomp ( `grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt` ) ; @d=split ( /\t/,$rcat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffcat UNITE10_gTHFdb.ITS1.lst | perl -ne 'chomp ; @a=split ( /\s/ ) ; @b=split ( /\|/ ) , $a[0] ; $id = $b[0] ; $suffix = $b[1] . "|" . $a[2] ; $id =~ s/^ > // ; $result=`grep "$id" sh_taxonomy_qiime_ver10_97_04.04.2024.txt` ; @d=#+1717501736
+   351	4:48	ls -al /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/
+   352	4:48	ls /usr/local/archdata/9043/projdata/MGX/localenv/bin
+   353	4:48	ls /usr/local/projdata/9043/projects/MGX/locals /usr/local/archdata/9043/projdata/MGX/usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/qiime -h
+   354	4:48	ls /usr/local/archdata/9043/projdatamore /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-ls /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.3.0/shals /usr/local/projdata/9043/projects/MGX/packagesls -lt /usr/local/archdata/9043/projdata/MGX/packages/16s_pipls /usr/local/archdata/9043/projdata/MGX/packages/16#+1717078021
+   355	4:48	/usr/local/archdata/9043/projdata/MGX/localenv/pacat config.ini >> softviz_config_default.ini
+   356	4:48	nano /usr/local/devel/Als /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16#+1717018430#/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/uparse_pipeline_with_config.sh -c default_config#+171#+171701nano cp /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz#+1717018430
+   357	4:48	less /usr/local/archdata//usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/uparse_pipe#+1717018411
+   358	4:48	ls /usr/local/more /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_P#+1717018356
+   359	4:48	more /local/zfs_archdata/9043/projdata/MGX/packages/16more default_config.ini
+   360	4:48	more /usr/local/archdata/9043/projdata/MGX/lls /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOmore /local/zfs_arcls -lt /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/
+   361	4:48	ls /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/UNITE10_gTHFdb.ITS1.fasta
+   362	4:48	rm UNITE10_gTHFdb.ITS1_clean.txt
+   363	4:48	/usr/local/archdata/9043/projdata/MGX/localenv/bin/localenv use 16s_pipeline uparse_pipeline -e 1 -c otu_ITS_pipeline_UNITE_THFdb_ITS1_PSC.ini ./Schnabl_ITS1_PSC_combined_dir#+1716588179
+   364	4:48	more UNITE10_gTHFdb.ITS1_ls /usr/local/archdata/more sh_taxonomy_qiime_ver10_97_04.04.2024_THF.txt
+   365	4:48	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/1mkdir Schnabl_ITS1_PSC_combined_dir
+   366	4:48	ls -lt /usr/local/devel/ANNOTATIONls /usr/local/archdata/9043/projdata/MGXls /usr/local/devel/ANNOTATION/dfouts/*/*.coords
+   367	4:48	mv otu_ITS_pipeline_UNITE_THFdb_ITS2_partial_gte50.ini otu_ITS_#+1716576562
+   368	4:48	/usr/local/archdata/9043/projdata/MGX/packages/usearch-8.1.1861/bin/usearch -makeudb_usearch UNITE10_gTHFdbls /usr/local/devel/ANNOTATION/dfouts/*/*.coords
+   369	4:48	ls /usr/local/archdata/9043/projdata/MGX/packages/usearch-8.1/usr/local/archdata/ls /usr/local/archdata/9043/projdata/MGX/packages/usearch-8.1.1861/bin/
+   370	4:48	ls /usr/local/archdata/9043/projdata/MGX/package/usr/local/archdata/90#+1716568069
+   371	4:48	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/usr/local/archdata/9043/projda#+1716568062
+   372	4:48	/usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipells /usr/local/archd#+1716567068
+   373	4:48	ls /usr/local/archdata/9043/projdata/MGX/localenv/anals /usr#+1716567056
+   374	4:48	ls /usr/local/archdata/9043/projdls /usr/local/arc#+1716567027
+   375	4:48	ls grasta -h -C -L S_15-21_S88_L001_R1_001.fastq ../ITS1-F.fa | more
+   376	4:48	cp ../raw_data//usr/local/devel/ANNOTATION/dfouts/bin/lsgrasta gunzip S_15-21_S88_L001_R1_001.fastq.gz
+   377	4:48	nano ITS1-F.fa
+   378	4:48	/usr/local/devel/ANNOTATION/dfouts/bin/lsgrasta -h -C -L UNITE1#+1715612131
+   379	4:48	grep -c "^>" sh_refs_qiime_ver10_#+1715612310
+   380	4:48	../bin/cleanFasta sh_refs_qiime_ver10_97_04.04.2024_THF.fasta
+   381	4:48	ln -s ../ITSx_1.1.2/ITSx_db/ .
+   382	7:13	cp /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz.pl /scratch/dfouts/bin/
+   383	7:13	cp /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/CONStest3.R /scratch/dfouts/bin/
+   384	7:14	mkdir softviz_dir
+   385	7:14	mv softviz.pl softviz_dir/
+   386	7:14	mv CONStest3.R softviz_dir/
+   387	7:14	cp /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/*.R /scratch/dfouts/bin/softviz_dir/
+   388	7:15	cp /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/*.py /scratch/dfouts/bin/softviz_dir/
+   389	7:15	ls softviz_dir/
+   390	7:19	rm auto_pcoa.1.4.1.oldFail.R
+   391	7:26	scp lsub2:/usr/local/devel/ANNOTATION/dfouts/bin/new_u* .
+   392	7:29	scp lsub2:/usr/local/devel/ANNOTATION/dfouts/bin/new_u\* .
+   393	7:31	grep "usr" new_uparse_pipeline_v2.5.sh
+   394	7:31	scp lsub2:/usr/local/devel/ANNOTATION/tclarke/otu_table_to_mothur_shared.py .
+   395	7:32	cd Schnabl_ITS1_PSC_combined_dir/
+   396	7:35	ls /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz
+   397	7:36	more /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/uparse_pipeline_with_config.sh
+   398	7:38	cd /scratch/dfouts/bin/softviz_dir/
+   399	7:38	cp /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/uparse_pipeline_with_config.sh .
+   400	7:39	more otu_table_to_mothur_shared.py
+   401	7:39	more uc2otutab.py
+   402	7:42	grep "usearch" new_uparse_pipeline_v2.5.sh
+   403	7:43	grep "usearch" uparse_pipeline_with_config.sh
+   404	7:48	more /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz_config_default.ini
+   405	7:48	ls /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/
+   406	7:50	cp -r /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/html_static .
+   407	7:50	cp -r /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/SOFTviz .
+   408	7:50	cp /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/check_usearch_version.pl .
+   409	7:56	ls /scratch/dfouts/packages/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/
+   410	7:58	cd PSC_ITS/
+   411	7:58	less history_parse_taxafile.txt
+   412	8:09	scp lsub2:/usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/uparse_pipeline .
+   413	8:10	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/uparse_pipeline
+   414	8:10	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/uparse_pipeline
+   415	8:10	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/bin/
+   416	8:11	scp lsub2:/usr/local/archdata/9043/projdata/MGX/localenv/packages/16s_pipeline-v1.4.1/bin/uparse_pipeline .
+   417	8:14	ls Schnabl_ITS1_PSC_combined_dir/
+   418	8:23	more /scratch/dfouts/packages/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz_config_default.ini.old
+   419	8:27	less new_uparse_pipeline_v2.5.sh
+   420	9:08	grep "basename" *
+   421	10:15	cp /scratch/dfouts/Schnabl_fungal_ITS_dir/PSC_ITS_dir/softviz_config_default.ini .
+   422	10:20	more u
+   423	10:20	more uparse_pipeline
+   424	10:20	more uparse_pipeline_with_config.sh
+   425	10:27	more new_uparse_pipeline_v2.5.sh
+   426	10:28	nano new_uparse_pipeline_v2.5.sh
+   427	10:29	grep ".OK" softviz_v2.pl
+   428	10:31	cp -r ../Schnabl_ITS1_PSC_combined_dir/* .
+   429	10:34	history | grep "eval"
+   430	10:34	eval "$(/usr/local/archdata/9043/projdata/MGX/localenv/bin/localenv init)"
+   431	10:53	cd /scratch/dfouts/packages/
+   432	10:53	mkdir perl_modules
+   433	10:53	cd perl_modules/
+   434	10:54	wget https://cpan.metacpan.org/authors/id/P/PE/PEVANS/perl-5.38.2.tar.gz
+   435	10:55	tar -xvzf perl-5.38.2.tar.gz
+   436	10:56	cd perl-5.38.2
+   437	10:56	ls cpan/
+   438	10:56	rm -rf perl-5.38.2
+   439	10:56	rm perl-5.38.2.tar.gz
+   440	10:58	rm -rf perl_modules/
+   441	10:58	cpan -h
+   442	11:03	grep "cpan" /scratch/dfouts/packages/history_install*
+   443	11:05	ls ~/perl5/lib/perl5/
+   444	11:05	ls ~/perl5/lib/perl5/5.16.3/x86_64-linux-thread-multi/
+   445	11:05	ls ~/perl5/lib/perl5/File/
+   446	11:06	cpanm -l ~/perl5 --verbose File::Basename
+   447	11:09	cpanm -h
+   448	11:09	cpanm -l ~/perl5 -f --verbose File::Basename
+   449	11:14	ls /scratch/dfouts/packages/MGX/localenv/perlbrew/
+   450	11:15	ls /scratch/dfouts/packages/MGX/localenv/perlbrew/perls/
+   451	11:15	ls /scratch/dfouts/packages/MGX/localenv/perlbrew/perls/perl-5.24.1/lib/
+   452	11:15	ls /scratch/dfouts/packages/MGX/localenv/perlbrew/perls/perl-5.24.1/lib/5.24.1/
+   453	11:16	ls /scratch/dfouts/packages/MGX/localenv/perlbrew/perls/perl-5.24.1/lib/5.24.1/File/
+   454	11:16	cd /scratch/dfouts/bin/
+   455	11:16	cd softviz_dir/
+   456	11:20	./softviz_v2.pl -h
+   457	11:21	more softviz_v2.pl
+   458	11:22	nano softviz_v2.pl
+   459	11:33	perl --version
+   460	11:34	cpanm -l ~/perl5 --verbose List::Util
+   461	11:39	./softviz_v2.pl
+   462	11:40	cd /scratch/dfouts/Schnabl_fungal_ITS_dir/PSC_ITS_dir/
+   463	11:41	more ../Schnabl_ITS1_PSC_combined_dir/Schnabl_ITS1_PSC_manifest_combined.txt
+   464	11:41	ls /scratch/dfouts/Schnabl_fungal_ITS_dir/PSC_ITS_dir/raw_data/
+   465	11:42	more /scratch/dfouts/bin/softviz_dir/softviz_v2.pl
+   466	11:45	/scratch/dfouts/bin/softviz_dir/softviz_v2.pl -h
+   467	11:46	cp /scratch/dfouts/bin/softviz_dir/softviz_config_default.ini .
+   468	11:48	ls /scratch/dfouts/bin/softviz/html_static
+   469	13:29	ls ls html
+   470	13:29	mv * working
+   471	13:30	mv html ..
+   472	13:30	mv attic ..
+   473	13:30	ls m
+   474	13:31	mv working/softviz_config_default.ini .
+   475	13:31	mv working/Schnabl_ITS1_PSC_manifest_combined.txt .
+   476	13:34	/scratch/dfouts/bin/softviz_dir/softviz_v2.pl -s Schnabl_ITS1_PSC_manifest_combined.txt -c softviz_config_default.ini -z -h
+   477	13:40	ls working/otu_table.qfilter.EE1.0.shared
+   478	13:48	more sub_manifest.combined.Ctl.PCRBlank1.txt
+   479	13:50	cd SOFTvia_combined_dir/
+   480	13:59	rm 16s_pipe.LOG.txt
+   481	14:02	/scratch/dfouts/bin/softviz_dir/softviz_v2.pl -s Schnabl_ITS1_PSC_manifest_combined.txt -c softviz_config_default.ini -z
+   482	14:02	ls working/otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary
+   483	14:03	ls otu_table.qfilter.L.EE.txt
+   484	14:03	ls working/otu_table.qfilter.L.EE.txt
+   485	14:07	more working/otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary
+   486	14:07	ls ../../Schnabl_ITS1_PSC_combined_dir/
+   487	14:08	more ../../Schnabl_ITS1_PSC_combined_dir/otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary
+   488	14:11	/scratch/dfouts/bin/softviz_dir/softviz_v2.pl -s Schnabl_ITS1_PSC_manifest_combined.txt -c softviz_config_default.ini -z file 2 > & 1
+   489	14:12	more 1
+   490	14:12	mv 1 softviz.log
+   491	14:15	nano /scratch/dfouts/bin/softviz_dir/softviz_v2.pl
+   492	6:45	less softviz.log
+   493	7:11	xvfb-run
+   494	7:11	which xvfb-run
+   495	7:17	which X11
+   496	7:17	xeyes
+   497	7:17	which xeyes
+   498	7:43	history | grep "cpanm"
+   499	7:44	cpanm -l ~/perl5 --verbose Config::IniFiles
+   500	7:52	which perl
+   501	7:52	perl -V
+   502	7:54	rm sub_manifest.*
+   503	7:54	scp /scratch/dfouts/bin/softviz_dir lsub2:/usr/local/devel/ANNOTATION/dfouts/bin/
+   504	7:55	scp -r /scratch/dfouts/bin/softviz_dir lsub2:/usr/local/devel/ANNOTATION/dfouts/bin/
+   505	7:56	mkdir SOFTviz_combined_dir
+   506	7:56	cd ../Schnabl_ITS1_PSC_combined_dir/
+   507	7:56	cp -r * ../SOFTviz_combined_dir/
+   508	7:58	scp softviz_config_default.ini lsub2:/usr/local/devel/ANNOTATION/dfouts/PSC_ITS/SOFTviz_combined_dir/
+   509	8:50	cd SOFTviz_combined_dir/
+   510	8:50	mkdir working
+   511	8:50	mv *.OK working/
+   512	8:51	ls working/*OK
+   513	8:52	touch usearch_pipeline.OK
+   514	8:59	more ../softviz_config_default.ini
+   515	9:03	more ../../bin/softviz_dir/new_uparse_pipeline_v2.5.sh
+   516	10:10	ls ../Schnabl_ITS1_PSC_combined_dir/'
+   517	10:11	/scratch/dfouts/bin/softviz_dir/softviz_v2.pl -s PSC_manifest_combined.txt -c softviz_config_default.ini
+   518	10:11	/scratch/dfouts/bin/softviz_dir/softviz_v3.pl -s PSC_manifest_combined.txt -c softviz_config_default.ini
+   519	10:11	/usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/softviz_v3.pl -s PSC_manifest_combined.txt -c softviz_config_default.ini
+   520	10:14	ls /usr/local/devel/ANNOTATION/dfouts/PSC_ITS_dir/UNITE10_gTHFdb.ITS1.fasta
+   521	10:15	mv PSC_ITS PSC_ITS_dir
+   522	10:16	cd PSC_ITS_dir/SOFTviz_combined_dir/
+   523	10:17	ls /scratch/dfouts/packages/MGX/packages/usearch-8.1.1861/bin/usearch
+   524	10:19	more ../../bin/new_uparse_pipeline_v2.5.sh
+   525	10:23	ls ..
+   526	10:26	more Schnabl_ITS1_PSC_manifest_combined.txt
+   527	10:30	cat Schnabl_ITS1_PSC_manifest_combined.txt | sed 's/\fastq\.gz/fastq/g'
+   528	10:31	cat Schnabl_ITS1_PSC_manifest_combined.txt | sed 's/fastq\.gz/fastq/g'
+   529	10:31	cat Schnabl_ITS1_PSC_manifest_combined.txt | sed 's/fastq\.gz/fastq/g' > Schnabl_ITS1_PSC_manifest_combined_fastq.txt
+   530	10:31	scp Schnabl_ITS1_PSC_manifest_combined_fastq.txt lsub2:/usr/local/devel/ANNOTATION/dfouts/PSC_ITS_dir/SOFTviz_combined_dir/
+   531	10:32	mv PSC_ITS_manifest_paired.txt PSC_ITS_manifest_paired_new_uparse.txt
+   532	10:32	mv Schnabl_ITS1_PSC_manifest_combined_fastq.txt PSC_ITS_manifest_paired.txt
+   533	10:34	cat PSC_ITS_manifest_paired.txt
+   534	10:35	cat PSC_ITS_manifest_paired.txt | sed 's/\/scratch\/dfouts\/Schnabl_fungal_ITS_dir/\/usr\/local\/devel\/ANNOTATION\/dfouts/g'
+   535	10:35	ls /usr/local/devel/ANNOTATION/dfouts/PSC_ITS_dir/raw_data/Ctl_ZymoPCR_C_S277_L001_R1_001.fastq
+   536	10:35	cat PSC_ITS_manifest_paired.txt | sed 's/\/scratch\/dfouts\/Schnabl_fungal_ITS_dir/\/usr\/local\/devel\/ANNOTATION\/dfouts/g' > PSC_ITS_manifest_paired.txt2
+   537	10:35	mv PSC_ITS_manifest_paired.txt2 PSC_ITS_manifest_paired.txt
+   538	10:36	xvfb-run -h
+   539	10:37	more /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/01_viz.R sub_manifest.combined.Healthy_S.G1.txt
+   540	10:37	more sub_manifest.combined.Healthy_S.G1.txt
+   541	10:39	ls /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/
+   542	10:39	ls /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/01_normalize_shared_file_for_viz.pl
+   543	10:42	ls /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/01_normalize_shared_file_for_viz.pl
+   544	10:42	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/01_normalize_shared_file_for_viz.pl
+   545	10:42	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/
+   546	10:43	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/bin/
+   547	10:43	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/lib/
+   548	10:43	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/
+   549	10:43	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/
+   550	10:43	ls -lt /usr/local/archdata/9043/projdata/MGX/localenv/envs/16s_pipeline/share/Uparse_16S_pipeline/01_normalize_shared_file_for_viz.pl
+   551	10:45	ls /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/01_*
+   552	10:45	cp /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/01_* /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/
+   553	10:45	ls /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/*.pl
+   554	10:46	diff /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz.1.4.3.pl /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/softviz.pl
+   555	10:46	cp /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/02_normalize_shared_file_for_viz.pl /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/
+   556	10:47	ls /usr/local/archdata/9043/projdata/MGX/packages/16s_pipeline-v1.4.1/share/Uparse_16S_pipeline/*R
+   557	10:57	ls /usr/local/packages/
+   558	10:58	ls /usr/local/bin/R
+   559	10:58	ls -lt /usr/local/bin/R
+   560	10:58	ls /usr/local/packages/r/
+   561	10:58	/usr/local/packages/r/bin/R --version
+   562	11:00	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/
+   563	11:00	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/softviz.1.4.1/
+   564	11:00	ls /usr/local/archdata/9043/projdata/MGX/localenv/envs/softviz.1.4.1/bin/
+   565	11:01	ls /usr/local/archdata/9043/projdata/MGX/
+   566	11:01	ls /usr/local/archdata/9043/projdata/MGX/packages/
+   567	11:02	ls /usr/local/archdata/9043/projdata/MGX/packages/2.0.7-beta/
+   568	11:02	ls /usr/local/archdata/9043/projdata/MGX/packages/2.0.7-beta/bin/
+   569	11:03	ls /usr/local/packages/r-4.0.3/
+   570	11:03	ls /usr/local/packages/r-4.0.3/bin/
+   571	11:14	ls R
+   572	11:16	mkdir R_packages
+   573	11:16	wget https://cran.r-project.org/src/contrib/Archive/vegan/vegan_2.6-4.tar.gz
+   574	11:24	wget https://cran.r-project.org/src/contrib/Archive/randomForest/randomForest_4.6-14.tar.gz
+   575	11:25	cd ../PSC_ITS_dir/SOFTviz_combined_dir/
+   576	11:26	more ../../bin/softviz_dir/*R
+   577	11:26	grep "library" ../../bin/softviz_dir/*R
+   578	11:28	grep ".R" ../../bin/softviz_dir/softviz_v3.pl
+   579	11:28	grep "\.R" ../../bin/softviz_dir/softviz_v3.pl
+   580	11:29	grep "library" ../../bin/softviz_dir/initialYAPviz.R
+   581	11:29	grep "library" ../../bin/softviz_dir/01_viz.R
+   582	11:30	grep "library" ../../bin/softviz_dir/auto_pcoa.R
+   583	11:31	grep "library" ../../bin/softviz_dir/chao1plot.R
+   584	11:31	/usr/local/packages/r-4.0.3/bin/R
+   585	11:35	cd ../../bin/softviz_dir/
+   586	11:36	grep "\.R" softviz_v3.pl
+   587	11:36	grep "\.R" softviz_v3.pl | grep -v "#"
+   588	11:36	mkdir attic
+   589	11:36	grep "\.R" softviz_v3.pl | grep -v "#" | grep "runsys"
+   590	11:38	grep "01_normal" softviz_v3.pl
+   591	11:38	grep "CONStest" softviz_v3.pl
+   592	11:39	more initialYAPviz.R
+   593	11:39	nano CONStest3.R
+   594	11:40	nano initialYAPviz.R
+   595	11:41	ls -lt *.R
+   596	11:41	nano 01_viz.R
+   597	11:41	nano pcoa_v8.R
+   598	11:42	nano chao1plot.R
+   599	11:42	nano auto_pcoa.R
+   600	11:43	nano auto_pcoa_v10.3.R
+   601	11:43	nano auto_pcoa_2_krona.R
+   602	11:43	nano auto_pcoa.1.4.1.R
+   603	11:44	nano auto_pcoa.1.4.3.20180517.R
+   604	11:47	R --version
+   605	11:47	rehash
+   606	11:53	which Rscript
+   607	11:53	cd ../../PSC_ITS_dir/SOFTviz_combined_dir/
+   608	12:05	ls -lt working/
+   609	12:06	ls ../../../assels Sma79#+1701719579
+   610	12:06	ls ../../../assels Sma80_S69_trim.f#+170#+170136grep -c "^>" ../../../assemblies/BBdukCombls Sma96_S83_trim.fasta
+   611	12:06	head UNITE10_gTHFdb.ITS1.fasta
+   612	12:06	1736
+   613	12:06	/usr/local/devel/ANNOTATION/dfouts/bin/lsgrasta -h -C -L S_15-21_S88_L001_R1_001.fastq ../usr/local/devel/A#+1715622231
+   614	12:06	xeyes &
+   615	12:07	cd /usr/local/devel/ANNOTATION/dfouts/PSC_ITS_dir/SOFTviz_combined_dir/
+   616	12:18	/usr/local/packages/r-3.6.2/bin/R
+   617	12:19	/usr/local/packages/r-3.5.1/R
+   618	12:19	/usr/local/packages/r-3.5.1/bin/R
+   619	12:19	/usr/local/packages/r-3.4.4/bin/R
+   620	12:20	/usr/local/packages/r-3.4.1/bin/R
+   621	12:20	/usr/local/packages/r-3.3.1/bin/R
+   622	12:24	more sub_manifest.combined.Healthy_S.G33.txt
+   623	12:38	ls /usr/local/packages/r-4.0.3/lib64/R/library/Rcpp/libs/
+   624	12:38	ls /usr/local/packages/r-4.0.3/lib64/
+   625	12:38	ls /usr/local/packages/r-4.0.3/lib64/pkgconfig/
+   626	12:38	ls /usr/local/packages/r-4.0.3/lib64/R/
+   627	12:38	ls /usr/local/packages/r-4.0.3/lib64/R/lib
+   628	12:38	ls /usr/local/packages/r-4.0.3/lib64/R/library/
+   629	12:47	more ../../bin/softviz_dir/initialYAPviz.Rxvfb-run /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/initialYAPviz.R
+   630	12:47	/usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/initialYAPviz.R
+   631	12:48	more ~/.cshrc
+   632	12:49	nano ~/.cshrc
+   633	12:50	echo $LD_*
+   634	12:50	source ~/.cshrc
+   635	12:50	echo $LD_LIBRARY_PATH
+   636	12:50	xvfb-run /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/initialYAPviz.R
+   637	12:53	more ../../bin/softviz_dir/initialYAPviz.R
+   638	12:55	grep "otu_tax_vs_frequency.txt " ../../bin/softviz_dir/softviz_v3.pl
+   639	12:55	grep "otu_tax_vs_frequency.txt" ../../bin/softviz_dir/softviz_v3.pl
+   640	13:03	cd working/
+   641	13:03	rm otu_freq.OK
+   642	13:03	rm sub_manifest.OK
+   643	13:04	less ../../../bin/softviz_dir/softviz_v3.pl
+   644	13:13	rm otu_tax_vs_frequency.*
+   645	13:13	rm working/otu_freq.OK
+   646	13:18	ls otus.qfilter.L.EE1.0.taxonomy.wang.taxonomy
+   647	13:18	more otus.qfilter.L.EE1.0.taxonomy.wang.taxonomy
+   648	13:19	more otus.qfilter.L.EE1.0.taxonomy.tax.summary
+   649	13:46	head v
+   650	13:47	head otus.qfilter.L.EE1.0.taxonomy.wang.taxonomy
+   651	13:47	head otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary.FAIL
+   652	13:48	head otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary
+   653	13:49	nano ../../bin/softviz_dir/softviz_v3.pl
+   654	13:56	mv otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary.FAIL otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary
+   655	13:59	history > history_YAPsoft_debugging.txt
+   656	7:06	ls /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.seqs_b062d9df7c9307aecb8de4e1b11c025a
+   657	7:08	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.seqs_b062d9df7c9307aecb8de4e1b11c025a/b062d9df7c9307aecb8de4e1b11c025a.files.x3.merged.pick.good.pick.1044_13127.good.filter.pds.wang.taxonomy
+   658	7:09	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/b062d9df7c9307aecb8de4e1b11c025a.files.x3.merged.pick.good.pick.1044_13127.good.filter.pds.wang.tax.summary
+   659	7:09	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.seqs_b062d9df7c9307aecb8de4e1b11c025a/b062d9df7c9307aecb8de4e1b11c025a.files.x3.merged.pick.good.pick.1044_13127.good.filter.pds.wang.tax.summary
+   660	7:12	ls /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.seqs_b062d9df7c9307aecb8de4e1b11c025a/b062d9df7c9307aecb8de4e1b11c025a.manifest
+   661	7:12	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.seqs_b062d9df7c9307aecb8de4e1b11c025a/e76d132282054398e5da792511b54946.files.x3.merged.pick.good.pick.good.group
+   662	7:18	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.seqs_b062d9df7c9307aecb8de4e1b11c025a/b062d9df7c9307aecb8de4e1b11c025a.manifest
+   663	7:19	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_screen.seqs_e76d132282054398e5da792511b54946/e76d132282054398e5da792511b54946.files.x3.merged.pick.good.pick.good.name
+   664	7:28	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.seqs_b062d9df7c9307aecb8de4e1b11c025a/b062d9df7c9307aecb8de4e1b11c025a.mothur.1410278090.logfile
+   665	7:30	ls /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.otu_*
+   666	7:30	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.otu_84d282a3fe27d794d6f5fa25274b9c05/84d282a3fe27d794d6f5fa25274b9c05.manifest
+   667	7:31	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_classify.otu_84d282a3fe27d794d6f5fa25274b9c05/84d282a3fe27d794d6f5fa25274b9c05.mothur.1410278449.logfile
+   668	10:55	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/Step_screen.seqs_e76d132282054398e5da792511b54946/e76d132282054398e5da792511b54946.files.x3.merged.pick.good.pick.good.group
+   669	10:57	more PSC_ITS_manifest_paired.txt
+   670	11:00	more otus.qfilter.L.EE1.0.taxonomy.wang.flip.accnos
+   671	11:00	ls otus.qfilter*
+   672	11:01	ls *.shared
+   673	11:01	ls otu*
+   674	11:07	more /usr/local/archdata/0606/projects/ALCOHEPA/YAP_Run_SL_Mutants/AH16S_5-5-14.csv
+   675	10:26	ls -lt PSC_ITS_manifest_paired | head
+   676	10:26	ls -lt PSC_ITS_manifest_paired* | head
+   677	10:27	head PSC_ITS_manifest_paired.txt
+   678	10:27	head PSC_ITS_manifest_paired_new_uparse.txt
+   679	10:54	mkdir SOFTviz2_dir
+   680	10:55	mv ../SOFTviz_combined_dir/PSC_ITS_manifest_paired_v2.txt .
+   681	10:55	dos2unix PSC_ITS_manifest_paired_v2.txt
+   682	10:56	cp ../SOFTviz_combined_dir/softviz_config_default.ini .
+   683	10:57	ls /usr/local/devel6
+   684	10:57	ls /usr/local/devel6/
+   685	10:58	cd /usr/local/devel/ANNOTATION/dfouts/PSC_ITS_dir/SOFTviz2_dir/
+   686	10:59	more PSC_ITS_manifest_paired_v2.txt
+   687	10:59	nano PSC_ITS_manifest_paired_v2.txt
+   688	11:02	ls ../Schnabl_ITS1_PSC_combined_dir/
+   689	11:04	more ../Schnabl_ITS1_PSC_combined_dir/PSC_ITS_manifest_paired.txt
+   690	11:57	more /usr/local/devel/ANNOTATION/dfouts/bin/new_uparse_pipeline_v2.5.sh
+   691	11:59	history | grep "new_up"
+   692	12:00	more /usr/local/devel/ANNOTATION/dfouts/PSC_ITS/Schnabl_ITS1_PSC_combined_dir/PSC_ITS_manifest_paired.txt
+   693	12:00	more /usr/local/devel/ANNOTATION/dfouts/PSC_ITS_dir/Schnabl_ITS1_PSC_combined_dir/PSC_ITS_manifest_paired.txt
+   694	12:01	less /usr/local/devel/ANNOTATION/dfouts/bin/new_uparse_pipeline_v2.5.sh
+   695	12:36	less 16s_pipe.LOG.txt
+   696	12:37	history > history_softviz_bigmem.txt
+   697	12:37	cp 16s_pipe.LOG.txt 16s_pipe.LOG_bigmem.txt
+   698	12:37	/usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/softviz_v3.pl -s PSC_ITS_manifest_paired.txt -c softviz_config_default.ini
+   699	12:45	cd R_packages/
+   700	12:46	wget
+   701	12:46	https://cran.r-project.org/src/contrib/Archive/MASS/MASS_7.3-59.tar.gz
+   702	12:46	wget https://cran.r-project.org/src/contrib/Archive/MASS/MASS_7.3-59.tar.gz
+   703	12:48	rm MASS_7.3-59.tar.gz
+   704	12:49	wget https://cran.r-project.org/src/contrib/Archive/MASS/MASS_7.3-58.tar.gz
+   705	12:49	R
+   706	12:51	cd ../
+   707	12:51	cd PSC_ITS_dir/SOFTviz2_dir/
+   708	12:51	/usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/softviz_v3.pl -s PSC_ITS_manifest_paired_v2.txt -c softviz_config_default.ini
+   709	12:58	ls /usr/local/devel/ANNOTATION/dfouts/
+   710	12:59	more ../../bin/softviz_dir/CONStest3.R
+   711	13:06	less ../../bin/softviz_dir/CONStest3.R
+   712	13:08	less ../../bin/softviz_dir/ConsTaxonomyPlots.R
+   713	13:19	cp ../../bin/softviz_dir/ConsTaxonomyPlots.R .
+   714	13:19	cp ../../bin/softviz_dir/make_YAP_plots.script.r .
+   715	13:20	more m
+   716	13:20	ls *taxsummary
+   717	13:22	ls *.csv
+   718	13:24	more ConsTaxonomyPlots.R
+   719	13:30	more more otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary
+   720	13:30	more otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary
+   721	13:31	head -1 otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary
+   722	13:31	head -1 otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary >> Fouts.tax.summary
+   723	13:31	grep "^6" otus.qfilter.L.EE1.0.taxonomy.wang.tax.summary >> Fouts.tax.summary
+   724	13:31	more Fouts.tax.summary
+   725	13:32	ls -lt | head -30
+   726	13:35	cp ../../bin/softviz_dir/CONStest3.R .
+   727	13:37	less ../../bin/softviz_dir/softviz_v3.pl
+   728	13:39	less ../../bin/softviz_dir/initialYAPviz.R
+   729	13:46	more otu_tax_vs_frequency.
+   730	13:54	less ConsTaxonomyPlots.R
+   731	13:57	more manifest_viz.csv
+   732	13:58	chmod -R 777 PSC_ITS_dir/
+   733	13:23	cd /scratch/dfouts/tmp_dir/
+   734	13:23	ls pymp-fjhfb2t5/
+   735	13:24	ls tmp/
+   736	13:24	rm -rf *
+   737	13:24	ls tmp_dir/
+   738	13:24	ls /tmp/
+   739	13:25	ls /scratch/dfouts/tmp_dir/
+   740	13:11	cd /scratch/dfouts/bin/phage_finder_v2.5/
+   741	13:12	ls DB/
+   742	13:13	cd phage_finder_v2.5/bin/
+   743	13:15	ls grid/
+   744	13:24	ls ../lib/PHAGE/
+   745	13:25	ls -lt ../lib/PHAGE/
+   746	13:33	cd ../bin/
+   747	13:33	; s
+   748	8:51	cd ../../
+   749	8:52	cd CAMRA_dir/
+   750	8:52	cd k
+   751	8:53	LS CAMRA_BatchA_121022_dir/
+   752	8:53	ls -lt CAMRA_BatchA_121022_dir/
+   753	8:54	ls CAMRA_BatchA_ASM/
+   754	8:54	ls CAMRA_BatchA_121022_dir/
+   755	8:54	rm -rf CAMRA_BatchA_121022_dir/
+   756	8:54	ls BatchA_tmp_dir/
+   757	8:55	ls -lt BatchA_tmp_dir/
+   758	8:55	ls -lt CAMRA_BatchA_ASM/
+   759	8:55	rm -rf BatchA_tmp_dir/
+   760	8:55	cd CAMRA_BatchA_ASM/
+   761	8:55	ls *
+   762	9:01	ls CCI9/plasmidfinder/
+   763	9:01	ls CCI9/plasmidfinder/plasmidfinder.log
+   764	9:05	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" | perl -ne 'chomp; @a=split(/\s/); print "$a[1]\n";'
+   765	9:06	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" | perl -ne 'chomp; @a=split(/\s/); @b=split(/_/.$a[1]); print "$b[0]\n";'
+   766	9:09	grep "IncFII" */plasmidfinder/plasmidfinder.log
+   767	9:11	more CAMRA_BatchA_121022_dir
+   768	9:12	grep "Found" */plasmidfinder/plasmidfinder.log | grep "IncFII"
+   769	9:13	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" | perl -ne 'chomp; @a=split(/\s/); @b=split(/_/,$a[1]); print "$b[0]\n";'
+   770	9:13	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" | perl -ne 'chomp; @a=split(/\s/); @b=split(/_/,$a[1]); print "$b[0]\n";' | cut -f1
+   771	9:13	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" | perl -ne 'chomp; @a=split(/\s/); @b=split(/_/,$a[1]); print "$b[0]\n";' | cut -f1 -d= ) (
+   772	9:13	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" | perl -ne 'chomp; @a=split(/\s/); @b=split(/_/,$a[1]); print "$b[0]\n";' | cut -f1 -d=")("
+   773	9:14	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" | perl -ne 'chomp; @a=split(/\s/); @b=split(/_/,$a[1]); print "$b[0]\n";' | cut -f1 -d=" "
+   774	9:14	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" | perl -ne 'chomp; @a=split(/\s/); @b=split(/_/,$a[1]); print "$b[0]\n";' | cut -f1 -d=''
+   775	9:14	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" | perl -ne 'chomp; @a=split(/\s/); @b=split(/_/,$a[1]); print "$b[0]\n";' | sort
+   776	9:15	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep" |
+   777	9:16	grep "Found" CCI9/plasmidfinder/plasmidfinder.log | grep -v "rep"
+   778	9:16	grep "Found" CCI9/plasmidfinder/plasmidfinder.log
+   779	9:17	more CCI9/plasmidfinder/data.json
+   780	9:20	less CCI9/plasmidfinder/data.json
+   781	9:20	more CCI9/plasmidfinder/plasmidfinder.log
+   782	9:23	grep "\'plasmid\':" CCI9/plasmidfinder/plasmidfinder.log
+   783	9:24	grep "\'plasmid\'\:" CCI9/plasmidfinder/plasmidfinder.log
+   784	9:24	grep "\'plasmid\'" CCI9/plasmidfinder/plasmidfinder.log
+   785	9:24	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log
+   786	9:25	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^\s+//'
+   787	9:26	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^\S+//'
+   788	9:26	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*\'//'
+   789	9:26	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*'//'
+   790	9:26	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*//'
+   791	9:27	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*\w//'
+   792	9:27	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*\W//'
+   793	9:27	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^..//'
+   794	9:27	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^..\'//'
+   795	9:27	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid'//'
+   796	9:27	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid//'
+   797	9:28	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid\\'//'
+   798	9:28	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid\'//'
+   799	9:29	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid\\\'//'
+   800	9:29	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid\\\\'//'
+   801	9:29	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid.://'
+   802	9:29	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid.:..//'
+   803	9:30	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid.:..//' | sed 's/,$//'
+   804	9:30	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid.:..//' | sed 's/.,$//'
+   805	9:30	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid.:..//' | sed 's/.,$//' | sort
+   806	9:31	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid.:..//' | sed 's/.,$//' | sort | perl -ne 'chomp; print "$_\t"; if (EOF) {print "\n";}'
+   807	9:32	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid.:..//' | sed 's/.,$//' | sort | perl -ne 'chomp; print "$_\t";'
+   808	9:33	grep "'plasmid'" CCI9/plasmidfinder/plasmidfinder.log | sed 's/^.*plasmid.:..//' | sed 's/.,$//' | sort | perl -ne 'chomp; print "$_\t"; if (eof) {print "\n";}'
+   809	9:34	echo $SHELL
+   810	13:34	cd /scratch/dfouts/CAMRA_dir/Kp_genomes_dir
+   811	13:34	cd CCI100/
+   812	13:34	cd ../../CAMRA_BatchA_ASM/
+   813	13:35	cd CCI3
+   814	14:02	more ../CAMRA_BatchB_250823_dir/
+   815	14:03	more history_parse_plasmidfinder.txt
+   816	14:10	cd ../CAMRA_BatchB_250823_dir/
+   817	14:10	more history_run_and_parse_kleborate_batchB.txt
+   818	14:11	for i in `cat genomes.lst` ; do echo -n "$i," >> plasmid_finder_summary.txt ; grep "'plasmid'" ${i}/plasmidfinder/plasmidfinder.log |
+   819	14:11	sed 's/^.*plasmid.:..//' | sed 's/.,$//' | sort | perl -ne 'chomp; print "$_,"; if (eof) {print "\n";}' >> plasmid_finder_summary.txt ; done
+   820	14:12	for i in `cat batchB_genomes.lst` ; do echo -n "$i," >> plasmid_finder_summary.txt ; grep "'plasmid'" ${i}/plasmidfinder/plasmidfinder.log | csed 's/^.*plasmid.:..//' | sed 's/.,$//' | sort | perl -ne 'chomp; print "$_,"; if (eof) {print "\n";}' >> plasmid_finder_summary.txt ; done
+   821	14:52	cd /scratch/dfouts/CAMRA_dir/Kp_genomes_dir/output_dir/SAMEA5753745/
+   822	14:52	more SAMEA5753745_contigs.fasta
+   823	14:54	ls plasmidfinder/
+   824	14:54	ls plasmidfinder/plasmidfinder.log
+   825	14:54	more plasmidfinder/plasmidfinder.log
+   826	14:54	more SAMEA12292467/plasmidfinder/plasmidfinder.log
+   827	14:54	more final_no7_genomes.lst
+   828	14:55	more SAMEA5753759/plasmidfinder/plasmidfinder.log
+   829	19:39	cd /scratch/dfouts/CAMRA_dir/Kp_genomes_dir/output_dir
+   830	19:39	rm plasmid_finder_summary.txt
+   831	7:46	cd /scratch/dfouts/CAMRA_dir/Kp_genomes_dir/
+   832	10:00	which aragorn
+   833	10:01	cd /scratch/dfouts/bin/phage_finder_v2.5
+   834	10:02	cd bin/
+   835	10:02	more phage_finder_v3.sh
+   836	10:03	grep "aragorn" phage_finder_v3.sh
+   837	10:04	ls /scratch/dfouts/packages/
+   838	10:10	ls /scratch/dfouts/bin/aragorn1.2.41/
+   839	10:10	ls /scratch/dfouts/bin/aragorn1.2.41/src/
+   840	13:23	df
+   841	13:48	cd /usr/local/projdata/99999/
+   842	13:48	cd IFX/
+   843	13:48	cd CommonDB/
+   844	13:49	cd uniprot
+   845	13:49	ls current_release/
+   846	13:49	ls current_release/uniref/
+   847	13:49	ls -lt current_release/uniref/uniref100
+   848	13:49	ls /usr/local/projdata/DB/
+   849	13:50	cd ../uniref100/
+   850	13:50	moure uniref100_20190408/
+   851	13:50	ls uniref100_20190408/
+   852	14:07	cd /scratch/dfouts/CAMRA_dir/Kp_genomes_dir/CAMRA_BatchB_250823_dir
+   853	14:08	for i in `cat batchB_genomes.lst` ; do echo -n "$i " ; cat ${i}/plasmidfinder/results_tab.tsv | perl -ne 'chomp; @a=split(/\t/); $inc = $a[1]; $inc =~ s/Plasmid//; print "$inc,";' ; done ;
+   854	15:02	cat otu_tax_vs_frequency.txt | grep -v "unclassified" > otu_tax_vs_frequency_named.txt
+   855	15:02	more otu_tax_vs_frequency_named.txt
+   856	15:03	cp make_YAP_plots.script.r make_YAP_plots.script_v2.r
+   857	15:03	nano make_YAP_plots.script_v2.r
+   858	15:04	which R
+   859	6:27	cd /scratch/dfouts/CAMRA_dir/
+   860	6:27	cd Kp_genomes_dir/
+   861	6:27	cd CAMRA_BatchB_250823_dir/
+   862	6:27	ls *.lst
+   863	6:27	head batchB_genomes.lst
+   864	6:27	cd CCI100/mobsuite/
+   865	6:28	more mobtyper_results.txt
+   866	6:34	ls Pfam/
+   867	6:34	ls Pfam/Pfam27.0/
+   868	7:51	htop
+   869	7:52	cd ../..
+   870	7:53	tail batchB_genomes.lst
+   871	13:59	ssh dell-17
+   872	13:10	more ~/.conndarc
+   873	13:10	ls ~/.conndarc
+   874	13:10	ls ~/.condarc
+   875	13:11	more ~/.condarc
+   876	13:11	ls ~/.conda
+   877	13:11	more ~/.conda/environments.txt
+   878	13:49	ls lib/
+   879	13:50	ls lib/Modules/
+   880	12:16	cd PSC_ITS_dir/
+   881	12:17	cd SOFTviz2_dir
+   882	12:17	ls *.txt
+   883	12:17	more usearch_manifest.txt
+   884	12:24	cd ..
+   885	12:25	mkdir Schnabl_SeqCoast_16S_test_dir
+   886	12:41	unzip 5183-selected.zip
+   887	12:45	ls ../
+   888	12:45	ls ../PSC_ITS_dir/
+   889	12:46	ls ../PSC_ITS_dir/SOFTviz2_dir/manifest_viz2.csv
+   890	12:46	more ../PSC_ITS_dir/SOFTviz2_dir/manifest_viz2.csv
+   891	12:46	more /usr/local/projdata/p0007860/projects/CDC_MCP/4806/16S/4809_uprase.txt.1.txt
+   892	12:48	more ../PSC_ITS_dir/SOFTviz2_dir/manifest_viz.csv
+   893	12:48	lse ../PSC_ITS_dir/SOFTviz2_dir/
+   894	12:48	ls ../PSC_ITS_dir/SOFTviz2_dir/
+   895	12:50	pwd
+   896	12:53	/usr/local/devel/ANNOTATION/tclarke/new_uparse_pipeline_v2.5.fasta.sh -e 1 -p -l 250 manifest.txt
+   897	12:55	ls labeled/
+   898	12:56	gunzip 5183_1_S59_R1_001.fastq.gz
+   899	12:56	gunzip 5183_1_S59_R2_001.fastq.gz
+   900	12:57	1 ; 2c1 ; 2cls
+   901	12:57	more 5183_1_S59_R1_001.fastq
+   902	13:00	bash
+   903	13:03	top
+   904	13:03	/usr/local/devel/ANNOTATION/tclarke/new_uparse_pipeline_v2.5.fasta.sh -e 1 -l 250 manifest.txt
+   905	13:06	rm -rf labeled/
+   906	13:06	rm input_reads.*
+   907	13:06	rm cleaning.OK error_profile.OK
+   908	13:06	/usr/local/devel/ANNOTATION/tclarke/new_uparse_pipeline_v2.5.fasta.sh -e 1 -p manifest.txt
+   909	13:06	/usr/local/devel/ANNOTATION/tclarke/new_uparse_pipeline_v2.5.fasta.sh -e 1 -p 1 manifest.txt
+   910	13:07	/usr/local/devel/ANNOTATION/tclarke/new_uparse_pipeline_v2.5.fasta.sh -p -e1 manifest.txt
+   911	13:07	/usr/local/devel/ANNOTATION/tclarke/new_uparse_pipeline_v2.5.fasta.sh -p -e 1 manifest.txt
+   912	13:08	more manifest.txt
+   913	13:09	exit
+   914	6:58	cd /usr/local/devel/ANNOTATION/dfouts/PSC_ITS_dir/
+   915	6:58	cd SOFTviz2_dir/
+   916	6:58	ls -lt | head
+   917	6:59	diff make_YAP_plots.script.r make_YAP_plots.script_v2.r
+   918	7:03	ls -lt | more
+   919	7:05	more manifest_viz2.csv
+   920	7:05	more history_softviz_bigmem.txt
+   921	7:06	ls -lt /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir
+   922	7:06	diff ConsTaxonomyPlots.R /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/ConsTaxonomyPlots.R
+   923	7:08	cd /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/
+   924	7:08	mv ConsTaxonomyPlots.R ConsTaxonomyPlots.R.old
+   925	7:09	cp /usr/local/devel/ANNOTATION/dfouts/PSC_ITS_dir/SOFTviz2_dir/ConsTaxonomyPlots.R .
+   927	7:13	less /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/CONStest3.R
+   928	7:13	more /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/make_YAP_plots.script.r
+   929	7:13	nano /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/initialYAPviz.R
+   930	7:15	cd Schnabl_SeqCoast_16S_test_dir/
+   931	7:15	rm -rf merged/
+   932	7:15	more ../PSC_ITS_dir/SOFTviz2_dir/PSC_ITS_manifest_paired_v2.txt
+   933	7:17	cp ../PSC_ITS_dir/SOFTviz2_dir/softviz_config_default.ini .
+   934	7:22	more /usr/local/devel/ANNOTATION/dharkins/script_repo/uparse_pipeline/uparse-v2.8__usearch-v11.0.667_mothur-v1.36_SILVA123/db/curated_noEuk_noArch_SILVA_123/curated_noEuk_noArch_SILVA_123_SSURef_Nr99_tax_silva.fasta
+   935	7:22	more /usr/local/devel/ANNOTATION/tclarke/new_uparse_pipeline_v2.5.fasta.sh
+   936	7:26	more ../PSC_ITS_dir/SOFTviz2_dir/history_softviz_bigmem.txt
+   937	7:27	rm *.OK
+   938	7:28	more mothur.1726496785.logfile
+   939	7:28	more otus.qfilter.L.EE1.0.fa
+   940	7:29	more 16s_pipe.LOG.txt
+   941	7:30	rm -rf working merged usearch_manifest.txt runfile.txt 16s_pipe.LOG.txt input_reads.* filtered.qfilter.L.EE1.0.fa derep.qfilter.L.EE1.0.fa sorted.qfilter.L.EE1.0.*
+   942	7:30	rm mothur.1726496785.logfile otus.qfilter.L.EE1.0.fa raw_otus.qfilter.L.EE1.0.*
+   943	7:30	gunzip *.gz
+   944	7:31	ls *.fastq
+   945	7:37	ssh bigmem2
+   946	7:37	ssh bigmem-2
+   947	7:38	/usr/local/devel/ANNOTATION/dfouts/Schnabl_SeqCoast_16S_test_dir/
+   948	7:40	nano manifest.txt
+   949	7:56	less /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/initialYAPviz.R
+   950	7:58	ls working/
+   951	7:58	/usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/make_YAP_plots.script.r
+   952	7:59	cp /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/make_YAP_plots.script.r .
+   953	7:59	cp ../PSC_ITS_dir/SOFTviz2_dir/ConsTaxonomyPlots.R .
+   954	8:00	more ma
+   955	8:00	more ../PSC_ITS_dir/SOFTviz2_dir/make_YAP_plots.script
+   956	8:00	more ../PSC_ITS_dir/SOFTviz2_dir/make_YAP_plots.script.r
+   957	8:00	cp ../PSC_ITS_dir/SOFTviz2_dir/make_YAP_plots.script.r
+   958	8:01	cp ../PSC_ITS_dir/SOFTviz2_dir/make_YAP_plots.script.r .
+   959	8:01	more make_YAP_plots.script.r
+   960	8:01	nano make_YAP_plots.script.r
+   961	8:01	cp make_YAP_plots.script.r /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/
+   962	8:03	more otu_table.qfilter.L.EE1.0.shared
+   963	8:04	more otus.qfilter.L.EE1.0.curated_noEuk_noArch_SILVA_123_SSURef_Nr99_tax_silva.wang.tax.summary
+   964	8:04	more otus.qfilter.L.EE1.0.curated_noEuk_noArch_SILVA_123_SSURef_Nr99_tax_silva.wang.taxonomy
+   965	8:08	/usr/local/devel/ANNOTATION/dharkins/script_repo/uparse_pipeline/uparse-v2.8__usearch-v11.0.667_mothur-v1.36_SILVA123/db/curated_noEuk_noArch_SILVA_123/
+   966	8:08	ls /usr/local/devel/ANNOTATION/dharkins/script_repo/uparse_pipeline/uparse-v2.8__usearch-v11.0.667_mothur-v1.36_SILVA123/db/curated_noEuk_noArch_SILVA_123/
+   967	8:08	more /usr/local/devel/ANNOTATION/dharkins/script_repo/uparse_pipeline/uparse-v2.8__usearch-v11.0.667_mothur-v1.36_SILVA123/db/curated_noEuk_noArch_SILVA_123/curated_noEuk_noArch_SILVA_123_SSURef_Nr99_tax_silva.tax
+   968	8:08	nano softviz_config_default.ini
+   969	8:09	rm taxonomic_assignment.OK
+   970	8:10	rm *OK
+   971	8:10	rm -rf working/
+   972	8:51	more otu_tax_vs_frequency.fail.txt
+   973	8:52	less /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/softviz_v3.pl
+   974	8:58	nano /usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/softviz_v3.pl
+   975	9:00	ls *.K
+   976	9:00	ls *.OK
+   977	9:00	ls -lt *.OK
+   978	9:00	rm read_map_otus.OK taxonomic_assignment.OK
+   979	9:00	/usr/local/devel/ANNOTATION/dfouts/bin/softviz_dir/softviz_v3.pl -s manifest.txt -c softviz_config_default.ini
+   980	9:01	more otu_tax_vs_frequency.txt
+   981	9:01	./make_YAP_plots.script.r
+   982	9:05	history > history.txt
+   983	9:07	more softviz_config_default.ini
+   985	12:20	more mapped_reads.qfilter.L.EE1.0.uc
+   986	12:45	ls merged/
+   988	9:23	cd /usr/local/devel/ANNOTATION/dfouts/Schnabl_SeqCoast_16S_test_dir/
+   989	9:23	head 5183_1_S59_R1_001.fastq
+   990	9:24	grep -c "^@" 5183_1_S59_R1_001.fastq
+   991	9:24	grep -c "^@" 5183_1_S59_R2_001.fastq
+   992	9:28	grep -c "^@" 5183_2_S60_R1_001.fastq
+   993	9:28	grep -c "^@" 5183_2_S60_R2_001.fastq
+   994	9:28	grep -c "^@" 5183_3_S61_R1_001.fastq
+   995	9:28	grep -c "^@" 5183_3_S61_R2_001.fastq
+   996	9:29	grep -c "^@" 5183_2Reseq_S186_R1_001.fastq
+   997	9:29	grep -c "^@" 5183_2Reseq_S186_R2_001.fastq
+   998	9:29	grep -c "^@" 5183_3Reseq_S188_R1_001.fastq
+   999	9:29	grep -c "^@" 5183_3Reseq_S188_R2_001.fastq
+  1000	20:02	ssh dell-19
+  1001	10:33	cd /usr/local/devel/ANNOTATION/dfouts/
+  1003	10:34	cd phage_finder_v2.5_4docker/lib/PHAGE/
+  1007	14:16	ls -lt
+  1009	14:18	perlcritic Phage_subs_v2.6c.pm
+  1010	14:18	ls
+  1011	14:18	rm *~
+  1012	14:18	mv Phage_subs.pm Phage_subs.pm.old
+  1013	14:19	mv Phage_subs_v2.6c.pm Phage_subs.pm
+  1014	14:19	perlcritic Phage_subs.pm
+  1015	14:19	history > history_perlcritic.txt
