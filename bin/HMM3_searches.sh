@@ -16,7 +16,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 # set the phage home directory
-phome=${Bin%/*}
+phome='/opt/Phage_Finder'
 
 # set the base or working directory
 base=`pwd`
