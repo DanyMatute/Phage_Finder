@@ -2,12 +2,13 @@
 
 # This Bash script is the Phage_Finder pipeline that runs BLASTP searches, HMMer3 searches, tRNAscan-SE, Aragorn and cmscan
 
-# Usage: phage_finder.sh <prefix of .pep/.ffa, .ptt and .con/.fna file>
+# Usage: phage_finder.sh <prefix of .pep/.faa, .ptt and .con/.fna file>
 
 # NOTE: a phage_finder_info.txt file will be searched for before a .ptt file
-# .pep is the multifasta protein sequence file
-# .ptt is a GenBank .ptt file that has the coordinates and ORF names with annotation
-# .con is a file that contains the complete nucleotide sequence of the genome being searched
+# .pep/.faa is the multifasta protein sequence file
+# .ptt is a GenBank .ptt file that has the coordinates and ORF names with annotation. 
+# .con/.fna is a file that contains the complete nucleotide sequence of the genome being searched
+# If .ptt is not avaliable, Phage_finder_info.txt can be used. It can be generated from the BVBRC annotation files using the phage_finder_info-generator-BVBRC_annot.py script. 
 
 #very cool Perl FindBin functional equivalent for BASH by Nicholas Dronen of crashingdaily.wordpress.com
 
@@ -16,7 +17,7 @@
 NO_ARGS=0
 OPTERROR=65
 
-usage() { echo "Usage: $0 [-s <blastp or diamond>] <prefix of .pep/.ffa, .ptt and .con/.fna file>" 1>&2; exit 1; }
+usage() { echo "Usage: $0 [-s <blastp or diamond>] <prefix of .pep/.faa, .ptt and .con/.fna file>" 1>&2; exit 1; }
 
 if [ $# -eq "$NO_ARGS" ]; then
     usage
@@ -47,7 +48,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 # set the phage home directory
-phome=${Bin%/*}
+phome='/opt/Phage_Finder'
 
 # set the base or working directory
 base=`pwd`
@@ -75,7 +76,7 @@ prefix=$1
       pepfile="${prefix}.pep"
   elif [ -s ${base}/${prefix}.faa ]
   then
-      pepfile="${prefix.faa}"
+      pepfile="${prefix}.faa"
   else
      echo "Could not find a ${prefix}.pep or ${prefix}.faa file.  Please check to make sure the file is present and contains data"
      exit 1
@@ -103,7 +104,7 @@ prefix=$1
         then
             ## do NCBI BLASTP searches
             echo "  BLASTing ${pepfile} against the Phage DB ..."
-            ${blastp} -db ${phome}/DB/phage_03_25_19.db -outfmt 6 -evalue 0.001 -query ${pepfile} -out ncbi.out -max_target_seqs 5 -num_threads 2
+            ${blastp} -db ${phome}/DB/phage_03_25_19.db -outfmt 6 -evalue 0.001 -query ${pepfile} -out ncbi.out -max_target_seqs 5 -num_threads 6
         fi
     elif [ "${s}" = "diamond" ] # if diamond searches desired
     then
@@ -143,9 +144,9 @@ prefix=$1
     then
         ## find select ncRNAs
         echo "  find ncRNA sequences ..."
-        Z=`${seqstat} $prefix.con | perl -ne 'chomp; if (/^Total # residues:\s+(\d+)/) {$n = $1; $Z=($n*2)/1000000; print "$Z\n";}'`
+        Z=`${seqstat} ${base}/${contigfile}| perl -ne 'chomp; if (/^Total # residues:\s+(\d+)/) {$n = $1; $Z=($n*2)/1000000; print "$Z\n";}'`
         #echo "Z = $Z"        
-        ${cmscan} -Z $Z --cut_ga --rfam --nohmmonly --tblout ${base}/ncRNA_cmscan.out --fmt 2 ${phome}/RfamDB/Rfam_PhageFinder.cm ${prefix}.con > ${prefix}.cmscan
+        ${cmscan} -Z $Z --cut_ga --rfam --nohmmonly --tblout ${base}/ncRNA_cmscan.out --fmt 2 ${phome}/RfamDB/Rfam_PhageFinder.cm ${base}/${contigfile} > ${prefix}.cmscan
     fi
 
     ## find the prophage
