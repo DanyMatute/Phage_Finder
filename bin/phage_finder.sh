@@ -163,4 +163,10 @@ prefix=$1
 
     echo "  generating linear illustrations..."
     ${phome}/bin/LinearDisplay_detailed.pl -A strict_dir/PFPR.frag -F strict_dir/PFPR.att -L -nt > strict_dir/PFPR_linear.fig
-    ${fig2dev} -L pdf strict_dir/PFPR_linear.fig strict_dir/PFPR_linear.pdf
+    if [ -s strict_dir/PFPR_linear.fig ]; then
+        # The file is not-empty.
+        ${fig2dev} -L pdf strict_dir/PFPR_linear.fig strict_dir/PFPR_linear.pdf
+    else
+        echo "File strict_dir/PFPR.att, strict_dir/PFPR.frag, strict_dir/PFPR_linear.fig are empty"
+    fi
+    
