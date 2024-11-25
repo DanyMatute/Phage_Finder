@@ -168,5 +168,6 @@ prefix=$1
         ${fig2dev} -L pdf strict_dir/PFPR_linear.fig strict_dir/PFPR_linear.pdf
     else
         echo "File strict_dir/PFPR.att, strict_dir/PFPR.frag, strict_dir/PFPR_linear.fig are empty"
+        touch strict_dir/PFPR_linear.fig
     fi
     
