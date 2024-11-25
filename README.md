@@ -1,8 +1,10 @@
 # Phage_Finder 
 
-https://sourceforge.net/projects/phage-finder/
+repo: https://sourceforge.net/projects/phage-finder/
 
-https://phage-finder.sourceforge.net/
+repo: https://phage-finder.sourceforge.net/
+
+publication: https://pubmed.ncbi.nlm.nih.gov/17062630/
 
 Phage_Finder was developed at The Institute for Genomic Research (TIGR) by Dr. Derrick E. Fouts as a heuristic computer program written in PERL to identify prophage regions within bacterial genomes (In press Nucleic Acids Research, 2006).
 
